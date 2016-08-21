@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://dendro.fe.up.pt/ontology/trafficSim#"
+     xml:base="http://dendro.fe.up.pt/ontology/trafficSim"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://dendro.fe.up.pt/ontology/trafficSim">
+        <owl:imports rdf:resource="http://dendro.fe.up.pt/ontology/research"/>
+        <owl:versionIRI rdf:resource="http://dendro.fe.up.pt/ontology/trafficSim/0.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/trafficSim#aerodynamicDragCoefficient -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/trafficSim#aerodynamicDragCoefficient">
+        <rdfs:comment>Aerodynamic Drag Coefficient</rdfs:comment>
+        <rdfs:comment>A number used in calculating the aerodynamic drag acting on a vehicle.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/trafficSim#TrafficSimulation"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/trafficSim#airDensity -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/trafficSim#airDensity">
+        <rdfs:label>Air Density</rdfs:label>
+        <rdfs:comment>The mass per unit of air in terms of weight per unit of volume.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/trafficSim#TrafficSimulation"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/trafficSim#controllerEfficiency -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/trafficSim#controllerEfficiency">
+        <rdfs:label>Controller Efficiency</rdfs:label>
+        <rdfs:comment>The efficiency of the motor controller.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/trafficSim#TrafficSimulation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/trafficSim#drivingCycle -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/trafficSim#drivingCycle">
+        <rdfs:label>Driving Cycle</rdfs:label>
+        <rdfs:comment>A series of data points representing the speed of a vehicle versus time. e.g. New York City Cycle (NYCC).</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/trafficSim#TrafficSimulation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/trafficSim#gearRatio -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/trafficSim#gearRatio">
+        <rdfs:label>Gear Ratio</rdfs:label>
+        <rdfs:comment>The relationship between the number of turns made by a driving gear to complete one full turn of the driven gear.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/trafficSim#TrafficSimulation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/trafficSim#gravitationalAcceleration -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/trafficSim#gravitationalAcceleration">
+        <rdfs:label>Gravitational Acceleration</rdfs:label>
+        <rdfs:comment>The acceleration on an object caused by the force of gravitation.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/trafficSim#roadSurfaceCoefficient -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/trafficSim#roadSurfaceCoefficient">
+        <rdfs:label>Road Surface Coefficient</rdfs:label>
+        <rdfs:comment>Used in determining the influence of road surface properties on rolling resistance.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/trafficSim#TrafficSimulation"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/trafficSim#tireRadius -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/trafficSim#tireRadius">
+        <rdfs:label>Tire Radius</rdfs:label>
+        <rdfs:comment>The forward speed divided by the spin rate, for a free-rolling wheel.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/trafficSim#TrafficSimulation"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/trafficSim#vehicle -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/trafficSim#vehicle">
+        <rdfs:label>Vehicle</rdfs:label>
+        <rdfs:comment>The vehicle class used in the simulation</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/trafficSim#TrafficSimulation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/trafficSim#vehicleFrontalArea -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/trafficSim#vehicleFrontalArea">
+        <rdfs:label>Vehicle Frontal Area</rdfs:label>
+        <rdfs:comment>The vehicle front end dimension.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/trafficSim#TrafficSimulation"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/trafficSim#vehicleMass -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/trafficSim#vehicleMass">
+        <rdfs:label>Vehicle Mass</rdfs:label>
+        <rdfs:comment>The mass of the vehicle.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/trafficSim#TrafficSimulation"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/trafficSim#vehicleModel -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/trafficSim#vehicleModel">
+        <rdfs:label>Vehicle Model</rdfs:label>
+        <rdfs:comment>A parameter used to designate a vehicle.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/trafficSim#TrafficSimulation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/research#ResearchAsset -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/research#ResearchAsset"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/trafficSim#Simulation -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/trafficSim#Simulation">
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/research#ResearchAsset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/trafficSim#TrafficSimulation -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/trafficSim#TrafficSimulation">
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/trafficSim#Simulation"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

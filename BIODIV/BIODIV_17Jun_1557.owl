@@ -1,0 +1,828 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY BIODIV "http://dendro.fe.up.pt/ontology/BIODIV/0.1#" >
+]>
+
+
+<rdf:RDF xmlns="http://dendro.fe.up.pt/ontology/INSPIRE/0.1#"
+     xml:base="http://dendro.fe.up.pt/ontology/INSPIRE/0.1"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:BIODIV="http://dendro.fe.up.pt/ontology/BIODIV/0.1#">
+    <owl:Ontology rdf:about="http://dendro.fe.up.pt/ontology/BIODIV/0.1">
+        <owl:imports rdf:resource="http://purl.org/NET/dc_owl2dl/terms_od"/>
+        <owl:imports rdf:resource="http://www.eurocris.org/ontologies/cerif/1.3"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#Email -->
+
+    <owl:AnnotationProperty rdf:about="&BIODIV;Email">
+        <rdfs:domain rdf:resource="http://www.semanticdesktop.org/ontologies/2007/03/22/nco#Contact"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#GeographicBoundBox -->
+
+    <owl:AnnotationProperty rdf:about="&BIODIV;GeographicBoundBox">
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/Location"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#Lineage -->
+
+    <owl:AnnotationProperty rdf:about="&BIODIV;Lineage">
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/ProvenanceStatement"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#TemporalExtent -->
+
+    <owl:AnnotationProperty rdf:about="&BIODIV;TemporalExtent">
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#email -->
+
+    <owl:AnnotationProperty rdf:about="&BIODIV;email">
+        <rdfs:domain rdf:resource="&BIODIV;ResponsibleParty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/INSPIRE/0.1#MetadataOnMetadata"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#mandatory -->
+
+    <owl:AnnotationProperty rdf:about="&BIODIV;mandatory">
+        <rdfs:label rdf:datatype="&xsd;boolean">false</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#organizationName -->
+
+    <owl:AnnotationProperty rdf:about="&BIODIV;organizationName">
+        <rdfs:label>Organization name</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The name of the organization in free text.</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:domain rdf:resource="&BIODIV;ResponsibleParty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/INSPIRE/0.1#Identification"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#responsibleParty -->
+
+    <owl:AnnotationProperty rdf:about="&BIODIV;responsibleParty">
+        <rdfs:label>Responsible party</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This is the description of the organisation responsible for the establishment, management, maintenance and destribution of the resource.</rdfs:comment>
+        <rdfs:domain rdf:resource="&BIODIV;ResponsibleParty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/INSPIRE/0.1#Identification"/>
+        <rdfs:domain rdf:resource="http://www.semanticdesktop.org/ontologies/2007/08/15/nao#Agent"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#conditionApplyingToAccessAndUse -->
+
+    <owl:ObjectProperty rdf:about="&BIODIV;conditionApplyingToAccessAndUse">
+        <rdfs:label>Condition applying to access and use</rdfs:label>
+        <BIODIV:mandatory>True</BIODIV:mandatory>
+        <rdfs:comment>This metadata element defines the conditions for access and use of spatial data sets and services, and where applicable, corresponding fees as required by Article 5(2)(b) and Article 11(2)(f) of Directive 2007/2/EC.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/rights"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#keywordValue -->
+
+    <owl:ObjectProperty rdf:about="&BIODIV;keywordValue">
+        <rdfs:label>Keyword value</rdfs:label>
+        <rdfs:comment>The keyword value is a commonly used word, formalised word or phrase used to describe the subject. While the topic category is too coarse for detailed queries, keywords help narrowing a full text search and they allow for structured keyword search. The value domain of this metadata element is free text.</rdfs:comment>
+        <rdfs:range rdf:resource="&BIODIV;Keyword"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#limitationOnPublicAccess -->
+
+    <owl:ObjectProperty rdf:about="&BIODIV;limitationOnPublicAccess">
+        <rdfs:label>Limitation on public access</rdfs:label>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:comment>When Member States limit public access to spatial data sets and spatial data services under Article 13 of Directive 2007/2/EC, this metadata element shall provide information on the limitations and the reasons for them. If there are no limitations on public access, this metadata element shall indicate that fact.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/accessRights"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#topicCategory -->
+
+    <owl:ObjectProperty rdf:about="&BIODIV;topicCategory">
+        <rdfs:label>Topic category</rdfs:label>
+        <rdfs:comment>The topic category is a high-level classification scheme to assist in the grouping and topic-based search of available spatial data resources. The value domain of this metadata element is defined in Part D.2 -  Commission Regulation (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata.</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPolicy -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/accrualPolicy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/accrualPeriodicity"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#conformityDate -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;conformityDate">
+        <rdfs:label>Conformity date</rdfs:label>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:comment>This citation shall include the date (date of publication, date of last revision or creation) of the implementing rules adopted under Article 7(1) of Directive 2007/2/EC of the specification.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#conformityDateType -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;conformityDateType">
+        <rdfs:label>Conformity date type</rdfs:label>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:comment>The citation of product specification shall include the data type of the implementing rules adopted under Article 7(1) of Directive 2007/2/EC or of the specification. The value domain of this metadata element a code list:
+-  Date of creation;
+-  Date of last revision;
+-  Date of publication.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#conformityDegree -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;conformityDegree">
+        <rdfs:label>Degree of conformity</rdfs:label>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:comment>This is the degree of conformity of the resource to the implementing rules adopted under Article 7(1) of Directive 2007/2/EC or other specification.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#conformitySpecification -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;conformitySpecification">
+        <rdfs:label>Conformity specification</rdfs:label>
+        <rdfs:comment>This is the degree of conformity of the resource to the implementing rules adopted under Article 7(1) of Directive 2007/2/EC or other specification.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#conformitySpecificationTitle -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;conformitySpecificationTitle">
+        <rdfs:label>Conformity specification title</rdfs:label>
+        <rdfs:comment>This citation shall include the title of the implementing rules adopted under Article 7(1) of Directive 2007/2/EC or of the specification.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#coupledResource -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;coupledResource">
+        <rdfs:label rdf:datatype="&xsd;string">Coupled resource</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">If the resource is a spatial data service, this metadata element identifies, where relevant, the target spatial data set(s) of the service through their unique resource identifiers (URI).
+The value domain of this metadata element is a mandatory character string code, generally assigned by the data owner, and a character string namespace uniquely identifying the context of the identifier code (for example, the data owner).</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#dateOfCreation -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;dateOfCreation">
+        <rdfs:label rdf:datatype="&xsd;string">Date of creation</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This is the date of creation of the resource. There shall not be more than one date of creation.</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <owl:equivalentProperty rdf:resource="http://purl.org/dc/terms/created"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#dateOfLastRevision -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;dateOfLastRevision">
+        <rdfs:label rdf:datatype="&xsd;string">Date of last revision</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This is the date of last revision of the resource, if the resource has been revised. There shall not be more than one date of last revision.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#dateOfPublication -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;dateOfPublication">
+        <rdfs:label rdf:datatype="&xsd;string">Date of publication</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This is the date of publication of the resource when available, or the date of entry into force. There may be more than one date of publication.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <owl:equivalentProperty rdf:resource="http://purl.org/dc/terms/issued"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#diagnosticAndUsability -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;diagnosticAndUsability">
+        <rdfs:label rdf:datatype="&xsd;string">Diagnostic and usability</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">A summary of data characteristics, quality and usability in free text.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#distributionFormatName -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;distributionFormatName">
+        <rdfs:label rdf:datatype="&xsd;string">Distribution format name</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Provides a description of the format of the data to be distributed.</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#equivalentScale -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;equivalentScale">
+        <rdfs:label rdf:datatype="&xsd;string">Equivalent Scale</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">An equivalent scale is generally expressed as an integer value expressing the scale denominator.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&BIODIV;spatialResolution"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#geographicBoundBox -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;geographicBoundBox">
+        <rdfs:label rdf:datatype="&xsd;string">Geographic bound box</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The bounding box shall be expressed with westbound and eastbound longitudes, and southbound and northbound latitudes in decimal degrees, with a precision of at least two decimals. For a matter of simplification in GeoCoMaS the bouding box should be included in the resources coordinate reference system of the resource if unique. Values should be whitespace or comma separated (e.g.: -31.27 -6.19 42.15 30.14).</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:domain rdf:resource="&BIODIV;GeographicLocation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#geographicExtentCode -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;geographicExtentCode">
+        <rdfs:label rdf:datatype="&xsd;string">Geographic extent code</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Description of the geographic area using identifiers.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#identifierCode -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;identifierCode">
+        <rdfs:label>Identifier code</rdfs:label>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:comment>Value uniquely identifying the resource. The value domain of this metadata element is a mandatory character string code, generally assigned by the data owner (e.g.,  code:  http://image2000.jrc.it#image2000_1_nl2_multi  (URI  form);  code:
+527c4cac-070c-4bca-9aaf-92bece7be902 (UUID form)).</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&BIODIV;uniqueResourceIdentifier"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#identifierNameSpace -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;identifierNameSpace">
+        <rdfs:label rdf:datatype="&xsd;string">Identifier namespace</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Character string namespace uniquely identifying the context of the identifier code (for example, the data owner. For GeoCoMaS the namespace is the directory name uniquely identifying the resource.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&BIODIV;uniqueResourceIdentifier"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#keywordINSPIRE -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;keywordINSPIRE">
+        <rdfs:label rdf:datatype="&xsd;string">Keyword INSPIRE</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">An INSPIRE thematic category from the controlled list (Gemet Thesaurus).</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:domain rdf:resource="&BIODIV;Keyword"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#lineage -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;lineage">
+        <rdfs:label rdf:datatype="&xsd;string">Lineage</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This is a statement on process history and/or overall quality of the spatial data set. Where appropriate it may include a statement whether the data set has been validated or quality assured, whether it is the official version (if multiple versions exist), and whether it has legal validity. The value domain of this metadata element is free text.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#linkage -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;linkage">
+        <rdfs:label rdf:datatype="&xsd;string">Linkage</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The value domain of this metadata element is a character string, commonly expressed as uniform resource locator (URL).</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&BIODIV;resourceLocator"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#metadataDate -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;metadataDate">
+        <rdfs:label rdf:datatype="&xsd;string">Metadata date</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The date which specifies when the metadata record was created or updated. This date shall be expressed in conformity with ISO 8601 (e.g.: Date  2011-05-02).</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#metadataLanguage -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;metadataLanguage">
+        <rdfs:label rdf:datatype="&xsd;string">Metadata language</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This is the language in which the metadata elements are expressed.
+The value domain of this metadata element is limited to the official languages of the Community expressed in conformity with ISO 639-2.</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#metadataPointOfContact -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;metadataPointOfContact">
+        <rdfs:label rdf:datatype="&xsd;string">Metadata point of contact</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This is the description of the organisation responsible for the creation and maintenance of the metadata.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#metadataPointOfContactEmail -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;metadataPointOfContactEmail">
+        <rdfs:label>Metadata point of contact email.</rdfs:label>
+        <rdfs:comment>A contact e-mail address as a character string.</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:subPropertyOf rdf:resource="&BIODIV;metadataPointOfContact"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#organizationEmail -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;organizationEmail">
+        <rdfs:label>Organization email</rdfs:label>
+        <rdfs:comment>A contact e-mail address of the organisation responsible for the establishment, management, maintenance and distribution of the resource (e-mail address as a character string).</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:domain rdf:resource="&BIODIV;ResponsibleParty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#organizationName -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;organizationName">
+        <rdfs:label>Organization name</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The name of the organization in free text.</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#originatingControlledVocabulary -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;originatingControlledVocabulary">
+        <rdfs:label rdf:datatype="&xsd;string">Originating controlled vocabulary</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">If the keyword value originates from a controlled vocabulary (thesaurus, ontology), for example GEMET, the citation of the originating controlled vocabulary shall be provided.
+This citation shall include at least the title and a reference date (date of publication, date of last revision or of creation) of the originating controlled vocabulary.</rdfs:comment>
+        <rdfs:domain rdf:resource="&BIODIV;Keyword"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#originatingControlledVocabularyDateType -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;originatingControlledVocabularyDateType">
+        <rdfs:label>Originating controlled vocabulary date type</rdfs:label>
+        <rdfs:comment>Date type associated to the originating controlled vocabulary list or publication (e.g., for GEMET - INSPIRE Spatial Data Themes: publication).
+The value domain of this metadata element is a Code List:
+-  Date of creation;
+-  Date of last revision;
+-  Date of publication.</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#originatingControlledVocabularyReferenceDate -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;originatingControlledVocabularyReferenceDate">
+        <rdfs:label>Originating controlled vocabulary reference date</rdfs:label>
+        <rdfs:comment>Reference date associated to the originating controlled vocabulary list or publication
+(e.g., for GEMET - INSPIRE Themes version 1.0: 2008-06-01)</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#originatingControlledVocabularyTitle -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;originatingControlledVocabularyTitle">
+        <rdfs:label>Title associated to the originating controlled vocabulary list or publication (e.g., GEMET INSPIRE Spatial Data Themes)</rdfs:label>
+        <rdfs:label>Originating controlled vocabulary title</rdfs:label>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#projectName -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;projectName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">Project name</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">A character string identifying the project where the resource originated.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#referenceSystemAuthority -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;referenceSystemAuthority">
+        <rdfs:label rdf:datatype="&xsd;string">Reference system authority</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Person or party responsible for maintenance of the namespace.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#referenceSystemIdentifier -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;referenceSystemIdentifier">
+        <rdfs:label rdf:datatype="&xsd;string">Reference system identifier</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Name of reference system.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#referenceSystemIdentifierCode -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;referenceSystemIdentifierCode">
+        <rdfs:label>Reference system identifier code</rdfs:label>
+        <rdfs:comment>Name of reference system. Information on reference system (code and codespace) can be obtained in http://spatialreference.org/
+7.1.1 Code *. Alphanumeric value identifying an instance in the namespace</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#referenceSystemIdentifierCodeSpace -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;referenceSystemIdentifierCodeSpace">
+        <rdfs:label>References system identifier codespace</rdfs:label>
+        <rdfs:comment>Name or identifier of the person or organization responsible for namespace.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#referencesSystemCode -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;referencesSystemCode">
+        <rdfs:label rdf:datatype="&xsd;string">Reference system code</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Alphanumeric value identifying an instance in the namespace.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#resolutionDistance -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;resolutionDistance">
+        <rdfs:label>Resolution distance</rdfs:label>
+        <rdfs:comment>A resolution distance shall be expressed as a numerical value associated with a unit of length.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#resourceAbstract -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;resourceAbstract">
+        <rdfs:label rdf:datatype="&xsd;string">Resource abstract</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This is a brief narrative summary of the content of the resource.
+The value domain of this metadata element is free text.</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#resourceLanguage -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;resourceLanguage">
+        <rdfs:label rdf:datatype="&xsd;string">Resource language</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The language(s) used within the resource.
+The value domain of this metadata element is limited to the languages defined in ISO 639-2.</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#resourceLocator -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;resourceLocator">
+        <rdfs:label>Resource locator</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The resource locator defines the link(s) to the resource and/or the link to additional information about the resource.
+The value domain of this metadata element is a character string, commonly expressed as uniform resource locator (URL).</rdfs:comment>
+        <owl:equivalentProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#resourceTitle -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;resourceTitle">
+        <rdfs:label rdf:datatype="&xsd;string">Resource title</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This a characteristic, and often unique, name by which the resource is known.
+The value domain of this metadata element is free text.</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:domain rdf:resource="&rdfs;Resource"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#responsibleParty -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;responsibleParty">
+        <rdfs:label>Responsible party</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This is the description of the organisation responsible for the establishment, management, maintenance and destribution of the resource.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#responsiblePartyRole -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;responsiblePartyRole">
+        <rdfs:label rdf:datatype="&xsd;string">Responsible party role</rdfs:label>
+        <owl:incompatibleWith>This is the role of the responsible organisation. The value domain of this metadata element is a Code List (ISO 19115 – Annex B5.5).
+</owl:incompatibleWith>
+        <rdfs:domain rdf:resource="&BIODIV;ResponsibleParty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#spatialRepresentation -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;spatialRepresentation">
+        <rdfs:label rdf:datatype="&xsd;string">Spatial representation type</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Digital mechanism used to represent spatial information.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#spatialResolution -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;spatialResolution">
+        <rdfs:label rdf:datatype="&xsd;string">Spatial resolution</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Spatial resolution refers to the level of detail of the data set. It shall be expressed as a set of zero to many resolution distances (typically for gridded data and imagery-derived products) or equivalent scales (typically for maps or map-derived products).</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#spatialResolutionUnitMeasure -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;spatialResolutionUnitMeasure">
+        <rdfs:label rdf:datatype="&xsd;string">Spatial resolution unit measure</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Mandatory if resolution distance field is used to describe the resource.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#spatialServiceDataType -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;spatialServiceDataType">
+        <rdfs:label rdf:datatype="&xsd;string">Spatial service data type</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This is a classification to assist in the search of available spatial data services. A specific service shall be categorised in only one category.
+The value domain of this metadata element is defined in Part D.3.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#temporalExtentEndingDate -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;temporalExtentEndingDate">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal extent ending date</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The temporal extent defines the time period covered by the content of the resource.</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:domain rdf:resource="&BIODIV;TemporalReference"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#temporalExtentStartingDate -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;temporalExtentStartingDate">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal extent starting date</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The temporal extent defines the time period covered by the content of the resource.</rdfs:comment>
+        <BIODIV:mandatory>true</BIODIV:mandatory>
+        <rdfs:domain rdf:resource="&BIODIV;TemporalReference"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#uniqueResourceIdentifier -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;uniqueResourceIdentifier">
+        <rdfs:label rdf:datatype="&xsd;string">Unique resource identifier</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">A value uniquely identifying the resource.
+The value domain of this metadata element is a mandatory character string code, generally assigned by the data owner, and a character string namespace uniquely identifying the context of the identifier code (for example, the data owner).</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#version -->
+
+    <owl:DatatypeProperty rdf:about="&BIODIV;version">
+        <rdfs:label rdf:datatype="&xsd;string">Version</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Version of the resource (v0 as stated in the GeoCoMaS documentation is reserved to original, unprocessed, unformated data).</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#GeographicLocation -->
+
+    <owl:Class rdf:about="&BIODIV;GeographicLocation">
+        <rdfs:label rdf:datatype="&xsd;string">Geographic Location</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment rdf:datatype="&xsd;string">The requirement for geographic location referred to in Article 11(2)(e) of Directive 2007/2/EC shall be expressed with the metadata element geographic bounding box.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#Keyword -->
+
+    <owl:Class rdf:about="&BIODIV;Keyword">
+        <rdfs:label rdf:datatype="&xsd;string">Keyword</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">If the resource is a spatial data service, at least one keyword from Part D.4 shall be provided.
+If a resource is a spatial data set or spatial data set series, at least one keyword shall be provided from the general environmental multilingual thesaurus (GEMET) describing the relevant spatial data theme as defined in Annex I, II or III to Directive 2007/2/EC.
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#ResponsibleParty -->
+
+    <owl:Class rdf:about="&BIODIV;ResponsibleParty">
+        <rdfs:label rdf:datatype="&xsd;string">Responsible Party</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Organisations responsible for the establishment, management, maintenance and distribution of the spatial data and services.
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#TemporalReference -->
+
+    <owl:Class rdf:about="&BIODIV;TemporalReference">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal Reference</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+        <rdfs:comment rdf:datatype="&xsd;string">This metadata element addresses the requirement to have information on the temporal dimension of the data as referred to in Article 8(2)(d) of Directive 2007/2/EC. At least one of the metadata elements referred to in points 5.1 to 5.4 shall be provided.
+The value domain of the metadata elements referred to in points 5.1 to 5.4 is a set of dates. Each date shall refer to a temporal reference system and shall be expressed in a form compatible with that system. The default reference system shall be the Gregorian calendar, with dates expressed in accordance with ISO 8601.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://dendro.fe.up.pt/ontology/gravimetry#"
+     xml:base="http://dendro.fe.up.pt/ontology/gravimetry"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://dendro.fe.up.pt/ontology/gravimetry">
+        <owl:imports rdf:resource="http://dendro.fe.up.pt/ontology/research"/>
+        <owl:versionIRI rdf:resource="http:/dendro.fe.up.pt/ontology/gravimetry/1.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#resolutionDistance -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BIODIV/0.1#resolutionDistance">
+        <rdfs:label>Resolution Distance</rdfs:label>
+        <rdfs:isDefinedBy>Inspire Metadata Regulation. http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008R1205</rdfs:isDefinedBy>
+        <rdfs:comment>Refers to the level of detail of the data set. It shall be expressed as a set of zero to many resolution distances (typically for gridded data and imagery-derived products).</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#measurement"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#temporalExtentEndingDate -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BIODIV/0.1#temporalExtentEndingDate">
+        <rdfs:label>Temporal Extent Ending Date</rdfs:label>
+        <rdfs:comment>The temporal ending date over which the dataset was acquired.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/gravimetry#AerialGravimetry"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#temporalExtentStartingDate -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BIODIV/0.1#temporalExtentStartingDate">
+        <rdfs:label>Temporal Extent Starting Date</rdfs:label>
+        <rdfs:comment>The temporal starting data over which the dataset was acquired.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/gravimetry#AerialGravimetry"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/gravimetry#altitudeDatumName -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/gravimetry#altitudeDatumName">
+        <rdfs:label>Altitude Datum Name</rdfs:label>
+        <rdfs:comment>The identification given to the surface taken as the surface of
+reference from which altitudes are measured</rdfs:comment>
+        <rdfs:isDefinedBy>Content Standard for Digital Geospatial Metadata https://www.fgdc.gov/standards/projects/FGDC-standards-projects/metadata/base-metadata/v2_0698.pdf</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/gravimetry#AerialGravimetry"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/gravimetry#altitudeDistanceUnits -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/gravimetry#altitudeDistanceUnits">
+        <rdfs:label>Altitude Distance Units</rdfs:label>
+        <rdfs:isDefinedBy>Content Standard for Digital Geospatial Metadata https://www.fgdc.gov/standards/projects/FGDC-standards-projects/metadata/base-metadata/v2_0698.pdf</rdfs:isDefinedBy>
+        <rdfs:comment>Units in which altitudes are recorded.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/gravimetry#AerialGravimetry"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/gravimetry#altitudeEncodingMethods -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/gravimetry#altitudeEncodingMethods">
+        <rdfs:label>Altitude Encoding Methods</rdfs:label>
+        <rdfs:isDefinedBy>Content Standard for Digital Geospatial Metadata https://www.fgdc.gov/standards/projects/FGDC-standards-projects/metadata/base-metadata/v2_0698.pdf</rdfs:isDefinedBy>
+        <rdfs:comment>The means used to encode the altitudes.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/gravimetry#AerialGravimetry"/>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#method"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/gravimetry#altitudeResolution -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/gravimetry#altitudeResolution">
+        <rdfs:label>Altitude Resolution</rdfs:label>
+        <rdfs:comment>The minimum distance possible between two adjacent altitude
+values, expressed in Altitude Distance Units of measure.
+</rdfs:comment>
+        <rdfs:isDefinedBy>Content Standard for Digital Geospatial Metadata https://www.fgdc.gov/standards/projects/FGDC-standards-projects/metadata/base-metadata/v2_0698.pdf</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/gravimetry#AerialGravimetry"/>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#measurement"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/gravimetry#altitudeSystemDefinition -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/gravimetry#altitudeSystemDefinition">
+        <rdfs:label>Altitude System Definition</rdfs:label>
+        <rdfs:isDefinedBy>Content Standard for Digital Geospatial Metadata https://www.fgdc.gov/standards/projects/FGDC-standards-projects/metadata/base-metadata/v2_0698.pdf</rdfs:isDefinedBy>
+        <rdfs:comment>The reference frame or system from which altitudes (elevations)
+are measured. The term &quot;altitude&quot;&apos; is used instead of the common term &quot;elevation&quot; to conform to the terminology in Federal Information Processing Standards 70-1 and 173.
+</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/gravimetry#AerialGravimetry"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/gravimetry#beginningTime -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/gravimetry#beginningTime">
+        <rdfs:label>Beginning Time</rdfs:label>
+        <rdfs:comment>The first hour (an optionally minute, or minute and second) of the day for the event.</rdfs:comment>
+        <rdfs:isDefinedBy>Content Standard for Digital Geospatial Metadata https://www.fgdc.gov/standards/projects/FGDC-standards-projects/metadata/base-metadata/v2_0698.pdf</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/gravimetry#endingTime -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/gravimetry#endingTime">
+        <rdfs:label>Ending Time</rdfs:label>
+        <rdfs:isDefinedBy>Content Standard for Digital Geospatial Metadata https://www.fgdc.gov/standards/projects/FGDC-standards-projects/metadata/base-metadata/v2_0698.pdf</rdfs:isDefinedBy>
+        <rdfs:comment>The last hour (an optionally minute, or minute and second) of the day for the event.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BIODIV/0.1#TemporalReference"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/gravimetry#AerialGravimetry"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/gravimetry#geographicBoundingBox -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/gravimetry#geographicBoundingBox">
+        <rdfs:label>Geographic Bounding Box</rdfs:label>
+        <rdfs:isDefinedBy>Inspire Metadata Regulation. http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008R1205</rdfs:isDefinedBy>
+        <rdfs:comment>This is the extent of the resource in the geographic space, given as a bounding box. The bounding box shall be expressed with westbound and eastbound longitudes, and southbound and northbound latitudes in decimal degrees, with a precision of at least two decimals.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BIODIV/0.1#GeographicLocation"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/gravimetry#AerialGravimetry"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#GeographicLocation -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/BIODIV/0.1#GeographicLocation"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BIODIV/0.1#TemporalReference -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/BIODIV/0.1#TemporalReference"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/gravimetry#AerialGravimetry -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/gravimetry#AerialGravimetry">
+        <rdfs:label>Aerial Gravimetry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/research#Experiment"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

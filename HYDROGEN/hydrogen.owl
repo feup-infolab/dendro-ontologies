@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2015/3/untitled-ontology-34#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2015/3/untitled-ontology-34"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://dendro.fe.up.pt/ontology/hydrogen">
+        <owl:imports rdf:resource="http://dendro.fe.up.pt/ontology/research"/>
+        <owl:versionIRI rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen/1.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#additive -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#additive">
+        <rdfs:label>Additive</rdfs:label>
+        <rdfs:label>Type of additive used in experimente.</rdfs:label>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#catalyst -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#catalyst">
+        <rdfs:label>Catalyst</rdfs:label>
+        <rdfs:comment>Type of catalyst used in experiment.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#gravimetricCapacity -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#gravimetricCapacity">
+        <rdfs:label>Gravimetric Capacity</rdfs:label>
+        <rdfs:comment>Gravimetric Hydrogen Storage Capacity</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#hydrationFactor -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#hydrationFactor">
+        <rdfs:label>Hydration Factor</rdfs:label>
+        <rdfs:comment>Amount of water used in reaction=2+x</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#hydrogenGenerationRate -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#hydrogenGenerationRate">
+        <rdfs:label>Hydrogen Generation Rate</rdfs:label>
+        <rdfs:comment>Amount of Hydrogen per minute</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#hydrolysis -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#hydrolysis">
+        <rdfs:label>Hydrolysis</rdfs:label>
+        <rdfs:comment>Type of hidrolysis reaction.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#numberOfReutilization -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#numberOfReutilization">
+        <rdfs:label>Number Of Reutilization</rdfs:label>
+        <rdfs:comment>Number of catalyst reutilizations.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#reactorType -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#reactorType">
+        <rdfs:label>Reactor Type</rdfs:label>
+        <rdfs:comment>Type of reactor used in experiment.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#reagent -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#reagent">
+        <rdfs:label>Reagent</rdfs:label>
+        <rdfs:comment>Type of reagent used in experiment.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration">
+        <rdfs:label>Hydrogen Generation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/research#Experiment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/research#Experiment -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/research#Experiment"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

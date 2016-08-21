@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY EcoGeorref "http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/joãocastro/ontologies/2014/5/EcoGeorref-10#"
+     xml:base="http://www.semanticweb.org/joãocastro/ontologies/2014/5/EcoGeorref-10"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:EcoGeorref="http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#">
+    <owl:Ontology rdf:about="http://dendro.fe.up.pt/ontology/EcoGeorref/0.1">
+        <owl:imports rdf:resource="http://dendro.fe.up.pt/ontology/dcb/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#Email -->
+
+    <owl:AnnotationProperty rdf:about="&EcoGeorref;Email">
+        <rdfs:label>email</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">A contact e-mail address as a character string</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.semanticdesktop.org/ontologies/2007/03/22/nco#Contact"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#GeographicBoundBox -->
+
+    <owl:AnnotationProperty rdf:about="&EcoGeorref;GeographicBoundBox">
+        <rdfs:label rdf:datatype="&xsd;string">geographicBoundBox</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The bounding box shall be expressed with westbound and eastbound longitudes, and southbound and northbound latitudes in decimal degrees, with a precision of at least two decimals. For a matter of simplification in GeoCoMaS the bouding box should be included in the resources coordinate reference system of the resource if unique. Values should be whitespace or comma separated (e.g.: -31.27 -6.19 42.15 30.14)</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/Location"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#Lineage -->
+
+    <owl:AnnotationProperty rdf:about="&EcoGeorref;Lineage">
+        <rdfs:label rdf:datatype="&xsd;string">lineage</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This is a statement on process history and/or overall quality of the spatial data set. Where appropriate it may include a statement whether the data set has been validated or quality assured, whether it is the official version (if multiple versions exist), and whether it has legal validity. The value domain of this metadata element is free text.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/ProvenanceStatement"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#TemporalExtent -->
+
+    <owl:AnnotationProperty rdf:about="&EcoGeorref;TemporalExtent">
+        <rdfs:label rdf:datatype="&xsd;string">temporalExtent</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The temporal extent defines the time period covered by the content of the resource. This time period may be expressed as any of the following:
+- an individual date,
+- an interval of dates expressed through the starting date and end date of the interval,
+- a mix of individual dates and intervals of dates.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#responsibleParty -->
+
+    <owl:AnnotationProperty rdf:about="&EcoGeorref;responsibleParty">
+        <rdfs:label>responsibleParty</rdfs:label>
+        <rdfs:comment>This is the description of the organisation responsible for the establishment, management, maintenance and destribution of the resource</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.semanticdesktop.org/ontologies/2007/08/15/nao#Agent"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#Email -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;Email">
+        <rdfs:label>email</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">A contact e-mail address as a character string</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#GeographicBoundBox -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;GeographicBoundBox">
+        <rdfs:label rdf:datatype="&xsd;string">geographicBoundBox</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The bounding box shall be expressed with westbound and eastbound longitudes, and southbound and northbound latitudes in decimal degrees, with a precision of at least two decimals. For a matter of simplification in GeoCoMaS the bouding box should be included in the resources coordinate reference system of the resource if unique. Values should be whitespace or comma separated (e.g.: -31.27 -6.19 42.15 30.14)</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#IdentifierNameSpace -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;IdentifierNameSpace">
+        <rdfs:label rdf:datatype="&xsd;string">identifierNameSpace</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Character string namespace uniquely identifying the context of the identifier code (for example, the data owner. For GeoCoMaS the namespace is the directory name uniquely identifying the resource.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#KeywordINSPIRE -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;KeywordINSPIRE">
+        <rdfs:label rdf:datatype="&xsd;string">keywordINSPIRE</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">An INSPIRE thematic category from the controlled list.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#KeywordValue -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;KeywordValue">
+        <rdfs:label rdf:datatype="&xsd;string">keywordValue</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The keyword value is a commonly used word, formalised word or phrase used to describe the subject. While the topic category is too coarse for detailed queries, keywords help narrowing a full text search and they allow for structured keyword search. The value domain of this metadata element is free text.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#Lineage -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;Lineage">
+        <rdfs:label rdf:datatype="&xsd;string">lineage</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This is a statement on process history and/or overall quality of the spatial data set. Where appropriate it may include a statement whether the data set has been validated or quality assured, whether it is the official version (if multiple versions exist), and whether it has legal validity. The value domain of this metadata element is free text.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#Linkage -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;Linkage">
+        <rdfs:label rdf:datatype="&xsd;string">linkage</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The value domain of this metadata element is a character string, commonly expressed as uniform resource locator (URL).</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#MetadataDate -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;MetadataDate">
+        <rdfs:label rdf:datatype="&xsd;string">metadataDate</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The date which specifies when the metadata record was created or updated. This date shall be expressed in conformity with ISO 8601 (e.g.: Date  2011-05-02).</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#MetadataLanguage -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;MetadataLanguage">
+        <rdfs:label rdf:datatype="&xsd;string">metadataLanguage</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This is the language in which the metadata elements are expressed.
+The value domain of this metadata element is limited to the official languages of the Community expressed in conformity with ISO 639-2.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#OrganizationName -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;OrganizationName">
+        <rdfs:label>organizationName</rdfs:label>
+        <rdfs:comment>The name of the organization in free text</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#ResourceAbstract -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;ResourceAbstract">
+        <rdfs:label rdf:datatype="&xsd;string">resourceAbstract</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This is a brief narrative summary of the content of the resource.
+The value domain of this metadata element is free text.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#ResourceLanguage -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;ResourceLanguage">
+        <rdfs:label rdf:datatype="&xsd;string">resourceLanguage</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The language(s) used within the resource.
+The value domain of this metadata element is limited to the languages defined in ISO 639-2.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#ResourceTitle -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;ResourceTitle">
+        <rdfs:label rdf:datatype="&xsd;string">resourceTitle</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This a characteristic, and often unique, name by which the resource is known.
+The value domain of this metadata element is free text.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#SpatialResolution -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;SpatialResolution">
+        <rdfs:label rdf:datatype="&xsd;string">spatialResolution</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Spatial resolution refers to the level of detail of the data set. It shall be expressed as a set of zero to many resolution distances (typically for gridded data and imagery-derived products) or equivalent scales (typically for maps or map-derived products).</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#SpatialResolutionUnitMeasure -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;SpatialResolutionUnitMeasure">
+        <rdfs:label rdf:datatype="&xsd;string">spatialResolutionUnitMeasure</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Mandatory if resolution distance field is used to describe to resource.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#TemporalExtent -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;TemporalExtent">
+        <rdfs:label rdf:datatype="&xsd;string">temporalExtent</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The temporal extent defines the time period covered by the content of the resource. This time period may be expressed as any of the following:
+- an individual date,
+- an interval of dates expressed through the starting date and end date of the interval,
+- a mix of individual dates and intervals of dates.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#TopicCategory -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;TopicCategory">
+        <rdfs:label rdf:datatype="&xsd;string">topicCategory</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The topic category is a high-level classification scheme to assist in the grouping and topic-based search of available spatial data resources.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/EcoGeorref/0.1#responsibleParty -->
+
+    <owl:DatatypeProperty rdf:about="&EcoGeorref;responsibleParty">
+        <rdfs:label>responsibleParty</rdfs:label>
+        <rdfs:comment>This is the description of the organisation responsible for the establishment, management, maintenance and destribution of the resource</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

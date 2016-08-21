@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://dendro.fe.up.pt/ontology/BioOc#"
+     xml:base="http://dendro.fe.up.pt/ontology/BioOc"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://dendro.fe.up.pt/ontology/BioOc">
+        <owl:imports rdf:resource="http://dendro.fe.up.pt/ontology/research"/>
+        <owl:versionIRI rdf:resource="http://dendro.fe.up.pt/ontology/BioOC/0.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#beginDate -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#beginDate">
+        <rdfs:label>Begin Date</rdfs:label>
+        <rdfs:isDefinedBy>https://knb.ecoinformatics.org/#external//emlparser/docs/eml-2.1.1/index.html</rdfs:isDefinedBy>
+        <rdfs:comment>A single time stamp signifying the beginning of some time period. There is a choice between two options: a calendar date with a time, or a geologic age.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#commonName -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#commonName">
+        <rdfs:label>Common Name</rdfs:label>
+        <rdfs:label>Specification of applicable common names. These common names may be general descriptions of a group of organisms if appropriate. E.g.: insects, vertebrate, grasses, waterfowl.</rdfs:label>
+        <rdfs:isDefinedBy>https://knb.ecoinformatics.org/#external//emlparser/docs/eml-2.1.1/index.html</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#endDate">
+        <rdfs:label>End Date</rdfs:label>
+        <rdfs:isDefinedBy>https://knb.ecoinformatics.org/#external//emlparser/docs/eml-2.1.1/index.html</rdfs:isDefinedBy>
+        <rdfs:comment>A single time stamp signifying the end of some time period. There is a choice between two options: a calendar date with a time, or a geologic age.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#geographicDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#geographicDescription">
+        <rdfs:label>Geographic Description</rdfs:label>
+        <rdfs:comment>It is a short text description of a dataset&apos;s geographic areal domain.</rdfs:comment>
+        <rdfs:isDefinedBy>https://knb.ecoinformatics.org/#external//emlparser/docs/eml-2.1.1/index.html</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#individualCount -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#individualCount">
+        <rdfs:label>Individual Count</rdfs:label>
+        <rdfs:isDefinedBy>http://filteredpush.org/ontologies/oa/dwcFP.owl</rdfs:isDefinedBy>
+        <rdfs:comment>The number of individuals represented present at the time of the sampling event.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography"/>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#measurement"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#individualsPerSpecies -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#individualsPerSpecies">
+        <rdfs:label>Individuals Per Species</rdfs:label>
+        <rdfs:comment>The quantity of individuals caught per species in a sample event. E.g.: Callinectes sapidus = 5, Murgil liza = 17.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography"/>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#measurement"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#lifeStage -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#lifeStage">
+        <rdfs:label>Life Stage</rdfs:label>
+        <rdfs:isDefinedBy>http://filteredpush.org/ontologies/oa/dwcFP.owl</rdfs:isDefinedBy>
+        <rdfs:comment>The age class or life stage of the biological individual(s) at the time the sampling event. Recommended best practice is to use a controlled vocabulary. Examples: &quot;egg&quot;, &quot;eft&quot;, &quot;juvenile&quot;, &quot;adult&quot;, &quot;2 adults 4 juveniles&quot;.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#observedWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#observedWeight">
+        <rdfs:label>Observed Weight</rdfs:label>
+        <rdfs:isDefinedBy>http://filteredpush.org/ontologies/oa/dwcFP.owl</rdfs:isDefinedBy>
+        <rdfs:comment>The total biomass found in a collection/record event. Expressed as kg.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#measurement"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#sampleDestination -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#sampleDestination">
+        <rdfs:label>Sample Destination</rdfs:label>
+        <rdfs:comment>Describes the final destination of a sample after used in the research analysis. E.g.: discarded, destroyed, donated to another research project, deposited in the lab collection, etc.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography"/>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#method"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#sampleIdentification -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#sampleIdentification">
+        <rdfs:label>Sample Identification</rdfs:label>
+        <rdfs:comment>An identifier created at collection time to identify the specimen collected. This field allows numbers, letters, simple words or codes, e.g. a numerical sequence or a composite code of letters and numbers.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography"/>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#method"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#samplingDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#samplingDescription">
+        <rdfs:label>Sampling Description</rdfs:label>
+        <rdfs:comment>Allows for a text-based/human readable description of the sampling procedures used in the research project. The content of this element would be similar to a description of sampling procedures found in the methods section of a journal article.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography"/>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#method"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#samplingEffort -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#samplingEffort">
+        <rdfs:label>Sampling Effort</rdfs:label>
+        <rdfs:isDefinedBy>http://filteredpush.org/ontologies/oa/dwcFP.owl</rdfs:isDefinedBy>
+        <rdfs:comment>The amount of effort expended during an Event. Examples: &quot;40 trap-nights&quot;, &quot;10 observer-hours; 10 km by foot; 30 km by car&quot;.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography"/>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#method"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#samplingPeriodicity -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#samplingPeriodicity">
+        <rdfs:label>Sampling Periodicity</rdfs:label>
+        <rdfs:comment>This field expresses the time interval between sample events. E.g.: daily, fortnightly, monthly, seasonal...</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#scientificName -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#scientificName">
+        <rdfs:label>Scientific Name</rdfs:label>
+        <rdfs:comment>The full scientific name, with authorship and date information if known. When forming part of an Identification, this should be the name in lowest level taxonomic rank that can be determined. E.g.: Callinectes sapidus Rathbun 1896.</rdfs:comment>
+        <rdfs:isDefinedBy>http://filteredpush.org/ontologies/oa/dwcFP.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#sex -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#sex">
+        <rdfs:label>Sex</rdfs:label>
+        <rdfs:comment>The sex of the biological individual(s) collected. Examples: &quot;female&quot;, &quot;hermaphrodite&quot;, &quot;8 males, 4 females&quot;.</rdfs:comment>
+        <rdfs:isDefinedBy>http://filteredpush.org/ontologies/oa/dwcFP.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#singleDateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#singleDateTime">
+        <rdfs:label>Single Date Time</rdfs:label>
+        <rdfs:comment>The singleDateTime field is intended to describe a single date and time for an event. There is a choice between two options: a calendar date with a time, or a geologic age.</rdfs:comment>
+        <rdfs:isDefinedBy>https://knb.ecoinformatics.org/#external//emlparser/docs/eml-2.1.1/index.html</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#speciesCount -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/BioOc#speciesCount">
+        <rdfs:label>Species Count</rdfs:label>
+        <rdfs:comment>The total number of species caught in a sample event, expressed by arabic numbers. E.g.: 5, 17.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography"/>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#measurement"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/BioOc#BiologicalOceanography">
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/BioOc#Observation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/BioOc#Observation -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/BioOc#Observation">
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/research#ResearchAsset"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

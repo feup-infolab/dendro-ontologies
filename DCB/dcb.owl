@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://dendro.fe.up.pt/ontology/dcb/"
+     xml:base="http://dendro.fe.up.pt/ontology/dcb/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://dendro.fe.up.pt/ontology/dcb/">
+        <owl:imports rdf:resource="http://dendro.fe.up.pt/ontology/research"/>
+        <owl:imports rdf:resource="http://dendro.fe.up.pt/ontology/0.1/"/>
+        <owl:versionIRI rdf:resource="http://dendro.fe.up.pt/ontology/dcb/0.1/"/>
+        <owl:imports rdf:resource="http://purl.org/NET/dc_owl2dl/terms_od"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="&terms;created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateAccepted -->
+
+    <owl:AnnotationProperty rdf:about="&terms;dateAccepted"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <rdf:Description rdf:about="&terms;hasVersion">
+        <rdfs:subPropertyOf rdf:resource="&terms;isPartOf"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/dcb/initialCrackLenght -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/dcb/initialCrackLenght">
+        <rdfs:label xml:lang="en">Initial Crack Length</rdfs:label>
+        <rdfs:comment xml:lang="en">The crack in the double cantilever beam specimen prior to the fracture test</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/dcb/specimenProperties"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/dcb/method -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/dcb/method">
+        <rdfs:label xml:lang="en">Method</rdfs:label>
+        <rdfs:comment xml:lang="en">Procedures used in the experiment</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/dcb/moisture -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/dcb/moisture">
+        <rdfs:label>Moisture</rdfs:label>
+        <rdfs:comment>Moisture percentage of the experiment location</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#measurement"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/dcb/specimen -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/dcb/specimen">
+        <rdfs:label rdf:datatype="&xsd;string">Specimen</rdfs:label>
+        <rdfs:comment>Type of specimen used in the experiment.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#sample"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/dcb/specimenHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/dcb/specimenHeight">
+        <rdfs:label xml:lang="en">Specimen Height</rdfs:label>
+        <rdfs:comment xml:lang="en">Specimen geometric height</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/dcb/specimenProperties"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/dcb/specimenLength -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/dcb/specimenLength">
+        <rdfs:label xml:lang="en">Specimen Length</rdfs:label>
+        <rdfs:comment xml:lang="en">Specimen geometric length</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/dcb/specimenProperties"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/dcb/specimenProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/dcb/specimenProperties">
+        <rdfs:label xml:lang="en">Specimen Property</rdfs:label>
+        <rdfs:comment xml:lang="en">Additional / MIscellaneous specimen property</rdfs:comment>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/dcb/specimenWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/dcb/specimenWidth">
+        <rdfs:label xml:lang="en">Specimen Width</rdfs:label>
+        <rdfs:comment xml:lang="en">Specimen geometric Width</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/dcb/specimenProperties"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/dcb/temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/dcb/temperature">
+        <rdfs:label>Temperature</rdfs:label>
+        <rdfs:comment>The ambient temperature at the experiment location</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#measurement"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/dcb/testVelocity -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/dcb/testVelocity">
+        <rdfs:label>Test Velocity</rdfs:label>
+        <rdfs:comment>Velocity at which the sampling machine pressed the sample during the experiment</rdfs:comment>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/dcb/DCBExperiment"/>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#measurement"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateAccepted -->
+
+    <rdf:Description rdf:about="&terms;dateAccepted">
+        <rdfs:subPropertyOf rdf:resource="&terms;created"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/dcb/DCBExperiment -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/dcb/DCBExperiment">
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/research/Experiment"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
