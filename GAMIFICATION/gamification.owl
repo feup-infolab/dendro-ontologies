@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://dendro.fe.up.pt/ontology/gamification/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://dendro.fe.up.pt/ontology/gamification/"
+     versionIRI="urn:absolute:0.1">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://dendro.fe.up.pt/ontology/0.1/</Import>
+    <Declaration>
+        <Class IRI="Gold2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Silver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Gold1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Bronze"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMedal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="pontuation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Medal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Bronze1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Bronze2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Gold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Silver2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Silver1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Bronze"/>
+        <Class IRI="Medal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Bronze1"/>
+        <Class IRI="Bronze"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Bronze2"/>
+        <Class IRI="Bronze"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Gold"/>
+        <Class IRI="Medal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Gold1"/>
+        <Class IRI="Gold"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Gold2"/>
+        <Class IRI="Gold"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Silver"/>
+        <Class IRI="Medal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Silver1"/>
+        <Class IRI="Silver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Silver2"/>
+        <Class IRI="Silver"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="belongsTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasMedal"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="belongsTo"/>
+        <ObjectProperty IRI="hasMedal"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="belongsTo"/>
+        <Class IRI="Bronze1"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="belongsTo"/>
+        <Class IRI="Bronze2"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="belongsTo"/>
+        <Class IRI="Gold1"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="belongsTo"/>
+        <Class IRI="Gold2"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="belongsTo"/>
+        <Class IRI="Medal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="belongsTo"/>
+        <Class IRI="Silver1"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="belongsTo"/>
+        <Class IRI="Silver2"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMedal"/>
+        <Class IRI="http://dendro.fe.up.pt/ontology/0.1/User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="Medal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="belongsTo"/>
+        <Class IRI="http://dendro.fe.up.pt/ontology/0.1/User"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMedal"/>
+        <Class IRI="Bronze1"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMedal"/>
+        <Class IRI="Bronze2"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMedal"/>
+        <Class IRI="Gold1"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMedal"/>
+        <Class IRI="Gold2"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMedal"/>
+        <Class IRI="Silver1"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMedal"/>
+        <Class IRI="Silver2"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="http://dendro.fe.up.pt/ontology/0.1/User"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="pontuation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="pontuation"/>
+        <Class IRI="http://dendro.fe.up.pt/ontology/0.1/User"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="pontuation"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
