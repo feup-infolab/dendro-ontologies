@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://dendro.fe.up.pt/ontology/cfd#"
+     xml:base="http://dendro.fe.up.pt/ontology/cfd"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://dendro.fe.up.pt/ontology/cfd">
+        <owl:versionIRI rdf:resource="http://dendro.fe.up.pt/ontology/cfd_0.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cfd#analyticalSolution -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cfd#analyticalSolution">
+        <rdfs:label rdf:datatype="&xsd;string">Analytical Solution</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">A solution obtained using analytical methods.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cfd#boundaryCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cfd#boundaryCondition">
+        <rdfs:label rdf:datatype="&xsd;string">Boundary Condtion</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Spatial or temporal specification of variable values or behaviour necessary to produce a unique solution.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cfd#computationalDomain -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cfd#computationalDomain">
+        <rdfs:label rdf:datatype="&xsd;string">Computational Domain</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The geometrical region over which a simulation is performed.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cfd#convergenceCriteria -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cfd#convergenceCriteria">
+        <rdfs:label rdf:datatype="&xsd;string">Convergence Criteria</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The defined convergence criteria.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cfd#flowCase -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cfd#flowCase">
+        <rdfs:label rdf:datatype="&xsd;string">Flow Case</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Descriptio of the flow used in the simulation.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cfd#initialCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cfd#initialCondition">
+        <rdfs:label rdf:datatype="&xsd;string">Initial Condition</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The initial variable conditions.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cfd#mathematicalModel -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cfd#mathematicalModel">
+        <rdfs:label rdf:datatype="&xsd;string">Mathematical Model</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The mathematical method used in the simulation.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cfd#numericalGrid -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cfd#numericalGrid">
+        <rdfs:label rdf:datatype="&xsd;string">Numerical Grid</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The outcome of splitting up the computational domain (discretisation) into a number of elements or cells defining the discrete points at which the numerical solution is computed. The points are normally the cell centres or cell vertices.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cfd#numericalMethod -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cfd#numericalMethod">
+        <rdfs:label rdf:datatype="&xsd;string">Numerical Method</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">stability, convergence etc.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cfd#surfaceRoughness -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cfd#surfaceRoughness">
+        <rdfs:label rdf:datatype="&xsd;string">Surface Roughness</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Quantified by the deviations in the direction of the normal vector of a real surface from its ideal form.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cfd#temporalDiscretization -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cfd#temporalDiscretization">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal Discretization</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"> Involves the integration of every term in different equations over a time step (Δt).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cfd#totalSimulatedTime -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cfd#totalSimulatedTime">
+        <rdfs:label rdf:datatype="&xsd;string">Total Simulated Time</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The duration of the simualation.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cfd#underrelaxation -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cfd#underrelaxation">
+        <rdfs:label rdf:datatype="&xsd;string">Underrelaxation</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Restrains the amount by which a variable may change from one iteration to the next.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cfd#ComputationalFluidDynamics -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/cfd#ComputationalFluidDynamics">
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/cfd#Simulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cfd#Simulation -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/cfd#Simulation"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

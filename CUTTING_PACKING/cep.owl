@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://dendro.fe.up.pt/ontology/cep/0.1#"
+     xml:base="http://dendro.fe.up.pt/ontology/cep/0.1"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://dendro.fe.up.pt/ontology/cep/0.1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cep/applicationDomain -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cep/applicationDomain">
+        <rdfs:label>Application Domain</rdfs:label>
+        <rdfs:comment>Domain for the problem</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/cep/inputProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cep/boardType -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cep/boardType">
+        <rdfs:label>Board Type</rdfs:label>
+        <rdfs:comment>Board is square, semi-infinite, ...</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/cep/inputProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cep/convexNonConvex -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cep/convexNonConvex">
+        <rdfs:label>Convex/ Non Convex</rdfs:label>
+        <rdfs:comment>Convex or non-convex pieces</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/cep/inputProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cep/coordinateOrigin -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cep/coordinateOrigin">
+        <rdfs:label>Coordinate Origin</rdfs:label>
+        <rdfs:comment>Convention for the coordinate origin</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/cep/resultProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cep/gridType -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cep/gridType">
+        <rdfs:label>Grid Type</rdfs:label>
+        <rdfs:comment>Grid type used</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/cep/resultProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cep/hardwareConfiguration -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cep/hardwareConfiguration">
+        <rdfs:label>Hardware Configuration</rdfs:label>
+        <rdfs:comment>Hardware configuration used</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/cep/resultProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cep/heuristics -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cep/heuristics">
+        <rdfs:label>Heuristics</rdfs:label>
+        <rdfs:comment>Heuristics used</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/cep/resultProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cep/inputProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cep/inputProperty">
+        <rdfs:label>Input Property</rdfs:label>
+        <rdfs:comment>Input Property</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <rdfs:label>Input Property</rdfs:label>
+        <owl:annotatedTarget>Input Property</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://dendro.fe.up.pt/ontology/cep/inputProperty"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cep/resultProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cep/resultProperty">
+        <rdfs:label>Result Property</rdfs:label>
+        <rdfs:comment>Result Property</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cep/solver -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cep/solver">
+        <rdfs:label>Solver Platform</rdfs:label>
+        <rdfs:comment>Solver platform used</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/cep/resultProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cep/solverConfiguration -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cep/solverConfiguration">
+        <rdfs:label>Solver Configuration</rdfs:label>
+        <rdfs:comment>Solver configuration used</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/cep/resultProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/cep/typologyWascher -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/cep/typologyWascher">
+        <rdfs:label>Typology Wascher</rdfs:label>
+        <rdfs:comment>Problem variant according to Wascher</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/cep/inputProperty"/>
+    </owl:DatatypeProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
