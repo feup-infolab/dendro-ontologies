@@ -1,16 +1,3 @@
-# dendro-ontologies
-Ontologies developed by the Research Data Management group at FEUP's Infolab for use in Dendro
-
-##Acknowledgements
-
-This work was supported by project NORTE-07-0124-FEDER-000059, financed by the North Portugal Regional Operational Programme (ON.2-O Novo Norte), under the National Strategic Reference Framework (NSRF), through the European Regional Development Fund (ERDF), and by national funds, through the Portuguese funding agency, Fundação para a Ciência e a Tecnologia (FCT). João Rocha da Silva was also supported by research grant SFRH/BD/77092/2011, provided by the Portuguese funding agency, Fundação para a Ciência e a Tecnologia (FCT).
-
-This work is financed by the ERDF – European Regional Development Fund through the Operational Programme for Competitiveness and Internationalisation - COMPETE 2020 Programme and by National Funds through the Portuguese funding agency, FCT - Fundação para a Ciência e a Tecnologia within project POCI-01-0145-FEDER-016736.
-
-<img src="https://github.com/feup-infolab-rdm/dendro-install/raw/master/logos.jpg">
-
-## License
-
 All source code is freely available under a standard [BSD 3-Clause license](https://opensource.org/licenses/BSD-3-Clause).
 
 Copyright (c) 2016, João Rocha da Silva, FEUP InfoLab
