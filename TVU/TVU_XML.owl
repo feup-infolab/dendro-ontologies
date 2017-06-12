@@ -1,0 +1,945 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://dendro.fe.up.pt/ontology/tvu/"
+     xml:base="http://dendro.fe.up.pt/ontology/tvu/"
+     xmlns:tvu="http://dendro.fe.up.pt/ontology/tvu#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:untitled-ontology-98="http://www.semanticweb.org/sara-/ontologies/2017/3/untitled-ontology-98#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <owl:Ontology rdf:about="http://dendro.fe.up.pt/ontology/tvu">
+        <owl:imports rdf:resource="http://dbpedia.org/ontology/"/>
+        <owl:imports rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore"/>
+        <untitled-ontology-98:license>Creative Commons Attribution-NonCommercial_ShareAlike (CC-BY-NC-SA)</untitled-ontology-98:license>
+        <untitled-ontology-98:creator>Sara Oliveira</untitled-ontology-98:creator>
+        <rdfs:seeAlso>DBpedia Ontology http://dbpedia.org/ontology/
+Dublin Core http://dublincore.org/documents/dces/ 
+EBU Ontology (ebucore) http://www.ebu.ch/metadata/ontologies/ebucore/ebucore
+Programmes Ontology http://purl.org/ontology/po/
+VideoMD: Video Technical Metadata Extension Schema https://www.loc.gov/standards/amdvmd/</rdfs:seeAlso>
+        <untitled-ontology-98:description>A list of concepts for the description of the dataset generated in the scope of audiovisual production.</untitled-ontology-98:description>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#creator -->
+
+    <owl:AnnotationProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#creator"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#description -->
+
+    <owl:AnnotationProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#description"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#license -->
+
+    <owl:AnnotationProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#contact -->
+
+    <owl:ObjectProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#contact">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://dendro.fe.up.pt/ontology/tvu#homepageOffice"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://dendro.fe.up.pt/ontology/tvu#officeMailAddress"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://dendro.fe.up.pt/ontology/tvu#telephoneOffice"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#date -->
+
+    <owl:ObjectProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://dendro.fe.up.pt/ontology/tvu#endDateAndTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://dendro.fe.up.pt/ontology/tvu#eventEndDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://dendro.fe.up.pt/ontology/tvu#eventStartDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://dendro.fe.up.pt/ontology/tvu#startDateAndTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/comment -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/comment">
+        <owl:equivalentProperty rdf:resource="http://dendro.fe.up.pt/ontology/tvu#comment"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/dateLastUpdated -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/dateLastUpdated">
+        <owl:equivalentProperty rdf:resource="http://dendro.fe.up.pt/ontology/tvu#dateLastUpdated"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/endDateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/endDateTime">
+        <owl:equivalentProperty rdf:resource="http://dendro.fe.up.pt/ontology/tvu#endDateAndTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/episodeNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/episodeNumber">
+        <owl:equivalentProperty rdf:resource="http://dendro.fe.up.pt/ontology/tvu#episodeNumber"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/office -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/office">
+        <owl:equivalentProperty rdf:resource="http://dendro.fe.up.pt/ontology/tvu#officeMailAddress"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/publicationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/publicationDate">
+        <owl:equivalentProperty rdf:resource="http://dendro.fe.up.pt/ontology/tvu#publicationDate"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/quotation -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/quotation">
+        <owl:equivalentProperty rdf:resource="http://dendro.fe.up.pt/ontology/tvu#quotation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/startDateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/startDateTime">
+        <owl:equivalentProperty rdf:resource="http://dendro.fe.up.pt/ontology/tvu#startDateAndTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#actor -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#actor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The person who plays the role of a character in the audiovisual content.</rdfs:comment>
+        <rdfs:isDefinedBy>Programmes ontology http://www.bbc.co.uk/ontologies/po</rdfs:isDefinedBy>
+        <rdfs:label>Actor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#aspectRatio -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#aspectRatio">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#aspectRatio"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The aspect ratio of a audiovisual content, describes the proportional relationship between its width and its height. Is expressed as two numbers separated by a colon (x:y)</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Aspect Ratio</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#attachments -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#attachments">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The file related to the audiovisual content, which may take different formats (PDF, PPT, JPEG).</rdfs:comment>
+        <rdfs:isDefinedBy>TVU. Vocabulary</rdfs:isDefinedBy>
+        <rdfs:label>Attachments</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#averageBitRate -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#averageBitRate">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/ma-ont#averageBitRate"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Refers to the average amount of data transferred per unit of time, usually measured per second, commonly for digital music or video.</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Average Bit Rate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#channel -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#channel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The channel in which audiovisual content is contained.</rdfs:comment>
+        <rdfs:isDefinedBy>Programmes ontology http://www.bbc.co.uk/ontologies/po</rdfs:isDefinedBy>
+        <rdfs:label>Channel</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#chapters -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#chapters">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Identifies the chapters included in the audiovisual content, with reference to the time.</rdfs:comment>
+        <rdfs:isDefinedBy>TVU. Vocabulary</rdfs:isDefinedBy>
+        <rdfs:label>Chapters</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#codecName -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#codecName">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#codecName"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Information about the hardware or software which makes the storage process or files transmission lighter.</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Codec Name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#comment -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#comment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Opinion or an observation made by a user.</rdfs:comment>
+        <rdfs:isDefinedBy>DBpedia Ontology http://wiki.dbpedia.org/services-resources/ontology</rdfs:isDefinedBy>
+        <rdfs:label>Comment</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#commentator -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#commentator">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Programmes ontology http://www.bbc.co.uk/ontologies/po</rdfs:comment>
+        <rdfs:comment>The person who relates/comments the audiovisual contents (usually in documentaries).</rdfs:comment>
+        <rdfs:label>Commentator</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#curator -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#curator">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The person who is responsible for making audiovisual contents available to the public and for manage the metadata associated to the audiovisual contents.</rdfs:comment>
+        <rdfs:isDefinedBy>TVU. Vocabulary</rdfs:isDefinedBy>
+        <rdfs:label>Curator</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#dataRate -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#dataRate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The speed at which data is transferred within the computer or between a peripheral device and computer, measured in bytes per second.</rdfs:comment>
+        <rdfs:isDefinedBy>VideoMD: Video Technical Metadata Extension Schema http://hopewiki.socialhistoryportal.org/index.php/Media_Specific_Standards_for_Technical_Metadata</rdfs:isDefinedBy>
+        <rdfs:label>Data Rate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#dateLastUpdated -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#dateLastUpdated">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The date at which was made the last updated to the audiovisual content.</rdfs:comment>
+        <rdfs:isDefinedBy>DBpedia Ontology http://wiki.dbpedia.org/services-resources/ontology</rdfs:isDefinedBy>
+        <rdfs:label>Date Last Updated</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#duration">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#eventDuration"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Information about the duration of a audiovisual content.</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Duration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#endDateAndTime -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#endDateAndTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The end date and time of an event captured in the audiovisual content. Indicated to use in promotional audiovisual contents.</rdfs:comment>
+        <rdfs:isDefinedBy>DBpedia Ontology http://wiki.dbpedia.org/services-resources/ontology</rdfs:isDefinedBy>
+        <rdfs:label>End Date and Time</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#episodeNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#episodeNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Identifies the episode number which is included in a premium channel.</rdfs:comment>
+        <rdfs:isDefinedBy>DBpedia ontology http://wiki.dbpedia.org/services-resources/ontology</rdfs:isDefinedBy>
+        <rdfs:label>Episode Number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#eventEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#eventEndDate">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#eventEndDate"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The end date of an event captured in the audiovisual content.</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Event End Date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#eventStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#eventStartDate">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#eventStartDate"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The start date of an event captured in the audiovisual content.</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Event Start Date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#fileName -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#fileName">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#filename"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Is a name used to uniquely identify a computer file stored in a file system.</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>File Name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#fileSize -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#fileSize">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#fileSize"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>Is a measure of how much data a computer file contains, or, alternately, how much storage it consumes. File size is typically expressed in bytes.</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>File Size</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#frameRate -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#frameRate">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#frameRate"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Is the frequency at which consecutive images are displayed in an animated display. Frame rate is usually expressed in hertz.</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Frame Rate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#genre -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#genre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The genre of a audiovisual content (news, documentaries...)</rdfs:comment>
+        <rdfs:isDefinedBy>Programmes ontology http://www.bbc.co.uk/ontologies/po</rdfs:isDefinedBy>
+        <rdfs:label>Genre</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#height -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#height">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#height"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The height of a video frame typically expressed as a number of pixels.  </rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Height</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#homepageOffice -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#homepageOffice">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#officeHomepage"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#Person"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment>Provides an office/ professional/ company web homepage of an agent (contact/ person or organization).</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Homepage Office</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#location -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#location">
+        <rdfs:comment>The place where audiovisual content was filmed.</rdfs:comment>
+        <rdfs:isDefinedBy>Programmes ontology http://www.bbc.co.uk/ontologies/po</rdfs:isDefinedBy>
+        <rdfs:label>Location</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#locationDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#locationDescription">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#locationDescription"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Description about the location where audiovisual content was filmed.</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Location Description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#numberOfFavourites -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#numberOfFavourites">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Information about the number of users who have marked the audiovisual content as favourite.</rdfs:comment>
+        <rdfs:isDefinedBy>DBpedia ontology http://wiki.dbpedia.org/services-resources/ontology</rdfs:isDefinedBy>
+        <rdfs:label>Number of Favourites</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#numberOfVisualizations -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#numberOfVisualizations">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Information about the number of visualizations associated to the audiovisual content.</rdfs:comment>
+        <rdfs:isDefinedBy>TVU. Vocabulary</rdfs:isDefinedBy>
+        <rdfs:label>Number of Visualizations</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#officeMailAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#officeMailAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#Person"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Provides the professional/ office address of an agent (contact/ person or organization).</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Office Mail Address</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#playbackSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#playbackSpeed">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#playbackSpeed"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Identifies the rate of units against time at which the audiovisual content should be played back for human consumption. Playback speed is typically expressed in kilobit per second.</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Playback Speed</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#publicationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#publicationDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The publication date of the audiovisual content.</rdfs:comment>
+        <rdfs:isDefinedBy>DBpedia Ontology http://wiki.dbpedia.org/services-resources/ontology</rdfs:isDefinedBy>
+        <rdfs:label>Publication Date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#quotation -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#quotation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>A phrase or comment, pronounced along the audiovisual content, accompanied by the identification of the time and the author. </rdfs:comment>
+        <rdfs:isDefinedBy>DBpedia Ontology http://wiki.dbpedia.org/services-resources/ontology</rdfs:isDefinedBy>
+        <rdfs:label>Quotation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#relatedResources -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#relatedResources">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#relatedLink"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>A link to a web resource containing information related to a audiovisual content.</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Related Resources</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#sampleRate -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#sampleRate">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#sampleRate"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The frequency at which audio is sampled per second. Also, called sampling rate. Sample rate is usually measured in hertz ou kilohertz.</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Sample Rate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#samplingFormat -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#samplingFormat">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#scanningFormat"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Defines the scanning format for a audiovisual content. For video, the two main values are “interlaced” or “progressive”.</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Sampling Format</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#soundField -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#soundField">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The digital sound format used in the media resource.</rdfs:comment>
+        <rdfs:isDefinedBy>VideoMD: Video Technical Metadata Extension Schema http://hopewiki.socialhistoryportal.org/index.php/Media_Specific_Standards_for_Technical_Metadata</rdfs:isDefinedBy>
+        <rdfs:label>Sound Field</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#startDateAndTime -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#startDateAndTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The start date and time of an event captured in the audiovisual contents. Indicated to use in promotional media resources.</rdfs:comment>
+        <rdfs:isDefinedBy>DBpedia Ontology http://wiki.dbpedia.org/services-resources/ontology</rdfs:isDefinedBy>
+        <rdfs:label>Start Date and Time</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#telephoneOffice -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#telephoneOffice">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#officeTelephoneNumber"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#Person"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Provides an office/ professional/ telephone number of an Agent (contact/ person or organization).</rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Telephone Office</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#typeOfUpdate -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#typeOfUpdate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Identifies the type of update which was made to a audiovisual content.</rdfs:comment>
+        <rdfs:isDefinedBy>TVU. Vocabulary</rdfs:isDefinedBy>
+        <rdfs:label>Type Of Update</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#videoMakers -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#videoMakers">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Identifies the responsibles for performing of the audiovisual contents (filming, edition work and all audience-visible components).</rdfs:comment>
+        <rdfs:isDefinedBy>TVU. Vocabulary</rdfs:isDefinedBy>
+        <rdfs:label>Video Makers</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#width -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/tvu#width">
+        <owl:equivalentProperty rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#width"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The width of a video frame typically expressed as a number of pixels.  </rdfs:comment>
+        <rdfs:isDefinedBy>EBU Ontology (ebucore) http://lov.okfn.org/dataset/lov/vocabs/ebucore</rdfs:isDefinedBy>
+        <rdfs:label>Width</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#aspectRatio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#aspectRatio"/>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#codecName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#codecName"/>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#eventDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#eventDuration"/>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#eventEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#eventEndDate"/>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#eventStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#eventStartDate"/>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#fileSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#fileSize"/>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#filename -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#filename"/>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#frameRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#frameRate"/>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#height"/>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#locationDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#locationDescription"/>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#officeHomepage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#officeHomepage"/>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#officeTelephoneNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#officeTelephoneNumber"/>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#playbackSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#playbackSpeed"/>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#relatedLink -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#relatedLink"/>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#sampleRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#sampleRate"/>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#scanningFormat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#scanningFormat"/>
+    
+
+
+    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#width -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#width"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#averageBitRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/ma-ont#averageBitRate"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#Actor -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/tvu#Actor">
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/tvu#Person"/>
+        <rdfs:comment>The person who plays the role of a character in the audiovisual content.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/tvu#AudiovisualContent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>The audiovisual content contains in the same support moving images and sound, and requires a technological device for recording, streaming, reception and understanding.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#Commentator -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/tvu#Commentator">
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/tvu#Person"/>
+        <rdfs:comment>The person who relates/comments the audiovisual contents (usually in documentaries).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#Contributor -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/tvu#Contributor">
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/tvu#Person"/>
+        <rdfs:comment>The entity responsible for making contributions to the audiovisual content. Examples of a contributor include an person, an organization, or an service.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#Creator -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/tvu#Creator">
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/tvu#Person"/>
+        <rdfs:comment>The entity primarily responsible for making the audiovisual content.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#Curator -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/tvu#Curator">
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/tvu#Person"/>
+        <rdfs:comment>The person who is responsible for making audiovisual contents available to the public and for manage the metadata associated to the audiovisual contents.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#Event -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/tvu#Event">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>The event which is captured in the audiovisual content.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#Person -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/tvu#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>An person who have influence in the audiovisual content. It can be an actor, an commentator, an contributor, an creator, an curator or an video producer.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/tvu#VideoMakers -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/tvu#VideoMakers">
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/tvu#Person"/>
+        <rdfs:comment>Identifies the responsibles for performing of the audiovisual contents (filming, edition work and all audience-visible components).</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
