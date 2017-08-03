@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://dendro.fe.up.pt/ontology/edu#"
+     xml:base="http://dendro.fe.up.pt/ontology/edu"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://dendro.fe.up.pt/ontology/socialStudies">
+        <owl:imports rdf:resource="http://dendro.fe.up.pt/ontology/research"/>
+        <owl:versionIRI rdf:resource="http://dendro.fe.up.pt/ontology/socialStudies/1.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/socialStudies#dataCollectionDate -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/socialStudies#dataCollectionDate">
+        <rdfs:label>Data Collection Date</rdfs:label>
+        <rdfs:comment>Provides a date or range of dates for the described data collection event as well as  a cycle number when the collection is part of a series of data collection events.</rdfs:comment>
+        <rdfs:isDefinedBy>DDI Data Documentation Initiative (ddi:datacollection:3_2) http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/namespaces/ddi_datacollection_3_2/namespace-overview.html</rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/socialStudies#dataCollectionMethodology -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/socialStudies#dataCollectionMethodology">
+        <rdfs:label>Data Collection Methodology</rdfs:label>
+        <rdfs:isDefinedBy>DDI Data Documentation Initative (ddi:datacollection:3_2) http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/datacollection_xsd/schema-overview.html</rdfs:isDefinedBy>
+        <rdfs:comment>Describes the methodology used for collecting data. Repeat this element if multiple methods, or techniques, are used.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#method"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/socialStudies#dataCollectionSoftware -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/socialStudies#dataCollectionSoftware">
+        <rdfs:label>Data Collection Software</rdfs:label>
+        <rdfs:isDefinedBy>DDI Data Documentation Initiative (ddi:datacollection:3_2) http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/datacollection_xsd/schema-overview.html</rdfs:isDefinedBy>
+        <rdfs:comment>Specification of a software package used to instantiate a data collection method.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#software"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/socialStudies#dataSource -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/socialStudies#dataSource">
+        <rdfs:label>Data Source</rdfs:label>
+        <rdfs:isDefinedBy>DDI Data Documentation Initiative (ddi:datacollection:3_2) http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/datacollection_xsd/schema-overview.html</rdfs:isDefinedBy>
+        <rdfs:comment>Describes a source or provenance of the data.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/socialStudies#externalAid -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/socialStudies#externalAid">
+        <rdfs:label>External Aid</rdfs:label>
+        <rdfs:isDefinedBy>DDI Data Documentation Initiative (ddi:datacollection:3_2)
+http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/datacollection_xsd/schema-overview.html</rdfs:isDefinedBy>
+        <rdfs:comment>A pointer to an external aid presented by the instrument such as a text card, image, audio, or audiovisual aid. Typically a URN. Use type attribute to describe the type of external aid provided. Example of terms to use would include: imageOnly audioOnly audioVisual multiMedia.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/socialStudies#kindOfData -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/socialStudies#kindOfData">
+        <rdfs:label>Kind Of Data</rdfs:label>
+        <rdfs:comment>Briefly describes the kind of data documented in the logical product(s) of a group unit. Examples include survey data, census/enumeration data, administrative data, measurement data, assessment data, demographic data, voting data, etc. Admissible values are &quot;Qualitative&quot; | &quot;Quantitative&quot; | &quot;Mixed&quot;</rdfs:comment>
+        <rdfs:isDefinedBy>DDI Data documentation initiative (ddi:reusable:3_2) http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/socialStudies#methodology -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/socialStudies#methodology">
+        <rdfs:label>Methodology</rdfs:label>
+        <rdfs:comment>Metadata regarding the methodologies used concerning data collection, determining the timing and repetition patterns for data collection, and sampling procedures.</rdfs:comment>
+        <rdfs:isDefinedBy>DDI Data Documentation Initiative (ddi:datacollection:3_2)
+http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/schemas/datacollection_xsd/schema-overview.html</rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#method"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/socialStudies#sampleSize -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/socialStudies#sampleSize">
+        <rdfs:label>Sample Size</rdfs:label>
+        <rdfs:comment>The size of the sample from whom data was requested.</rdfs:comment>
+        <rdfs:isDefinedBy>Data Documentation Initiative (ddi:datacollection:3_2)
+http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/namespaces/ddi_datacollection_3_2/namespace-overview.html</rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#measurement"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/socialStudies#samplingProcedure -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/socialStudies#samplingProcedure">
+        <rdfs:label>Sampling Procedure</rdfs:label>
+        <rdfs:isDefinedBy>DDI Data Documentation Initiative (ddi:datacollection:3_2) http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</rdfs:isDefinedBy>
+        <rdfs:comment>Describes the type of sample, sample design and provides details on drawing the sample. May be repeated to provide descriptions of individual facets of a single sample design or when multiple sampling methods are used. When multiple descriptions are used, the use of a controlled vocabulary to identify the parts and relationships is strongly recommended.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/research#method"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/socialStudies#universe -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/socialStudies#universe">
+        <rdfs:label>Universe</rdfs:label>
+        <rdfs:isDefinedBy>DDI Data documentation initiative (ddi:reusable:3_2)
+http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/namespaces/ddi_conceptualcomponent_3_2/namespace-overview.html</rdfs:isDefinedBy>
+        <rdfs:comment>Describes a universe which may also be known as a population.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/socialStudies#BehaviouralStudy -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/socialStudies#BehaviouralStudy">
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/research#ResearchAsset"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
