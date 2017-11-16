@@ -3,22 +3,126 @@
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY ontology "http://dendro.fe.up.pt/ontology/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY ddr "http://dendro.fe.up.pt/ontology/0.1/" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY hydrogen "http://dendro.fe.up.pt/ontology/hydrogen#" >
+    <!ENTITY research "http://dendro.fe.up.pt/ontology/research#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY dendro "http://dendro.fe.up.pt/ontology/dendro/0.1/" >
+    <!ENTITY nie "http://www.semanticdesktop.org/ontologies/2007/01/19/nie#" >
 ]>
 
 
 <rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2015/3/untitled-ontology-34#"
      xml:base="http://www.semanticweb.org/user/ontologies/2015/3/untitled-ontology-34"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:nie="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#"
+     xmlns:ontology="http://dendro.fe.up.pt/ontology/"
+     xmlns:research="&ontology;research#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ddr="&ontology;0.1/"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:hydrogen="&ontology;hydrogen#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://dendro.fe.up.pt/ontology/hydrogen">
-        <owl:imports rdf:resource="http://dendro.fe.up.pt/ontology/research"/>
-        <owl:versionIRI rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen/1.0"/>
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dendro="&ontology;dendro/0.1/">
+    <owl:Ontology rdf:about="&ontology;hydrogen">
+        <dc:contributor>João Aguiar Castro
+João Rocha da Silva
+Cristina Ribeiro
+Ricardo Amorim</dc:contributor>
+        <dc:description>A list of concepts for Hydrogen Generation dataset description.</dc:description>
+        <hydrogen:license>Creative Commons Attribution-NonCommercial_ShareAlike (CC-BY-NC-SA)</hydrogen:license>
+        <dc:creator>Yulia Karimova</dc:creator>
+        <owl:versionIRI rdf:resource="http://dendro.fe.up.pt/1.0"/>
+        <owl:imports rdf:resource="&ontology;0.1/"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasAlternative -->
+
+    <owl:AnnotationProperty rdf:about="&ontology;0.1/hasAlternative"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasRegex -->
+
+    <owl:AnnotationProperty rdf:about="&ontology;0.1/hasRegex"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#license -->
+
+    <owl:AnnotationProperty rdf:about="&ontology;hydrogen#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="&dc;description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#numberOfReutilization -->
+
+    <owl:ObjectProperty rdf:about="&ontology;hydrogen#numberOfReutilization">
+        <rdfs:label>Number Of Reutilization</rdfs:label>
+        <rdfs:comment>Number of catalyst reutilizations.</rdfs:comment>
+        <rdfs:domain rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+    <owl:ObjectProperty rdf:about="&owl;versionIRI"/>
     
 
 
@@ -33,92 +137,126 @@
     
 
 
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Exemplo_data -->
+
+    <owl:DatatypeProperty rdf:about="&ontology;hydrogen#Exemplo_data">
+        <ddr:hasErrorMessage>Invalid date format. Please ensure that the date format is mm/dd/yyyy</ddr:hasErrorMessage>
+        <rdfs:comment>Created for purpose to demonstration of using the annotation with regular expression</rdfs:comment>
+        <ddr:hasRegex>^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d$</ddr:hasRegex>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://dendro.fe.up.pt/ontology/hydrogen#additive -->
 
-    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#additive">
+    <owl:DatatypeProperty rdf:about="&ontology;hydrogen#additive">
         <rdfs:label>Additive</rdfs:label>
-        <rdfs:label>Type of additive used in experimente.</rdfs:label>
-        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration"/>
+        <ddr:isClosed rdf:datatype="&xsd;boolean">false</ddr:isClosed>
+        <ddr:hasAlternative>SDS</ddr:hasAlternative>
+        <rdfs:comment>Type of additive used in experimente.</rdfs:comment>
+        <ddr:hasAlternative>CMC</ddr:hasAlternative>
+        <rdfs:domain rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
     </owl:DatatypeProperty>
     
 
 
     <!-- http://dendro.fe.up.pt/ontology/hydrogen#catalyst -->
 
-    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#catalyst">
+    <owl:DatatypeProperty rdf:about="&ontology;hydrogen#catalyst">
         <rdfs:label>Catalyst</rdfs:label>
+        <ddr:isClosed rdf:datatype="&xsd;boolean">false</ddr:isClosed>
+        <ddr:hasAlternative>Co-Mn-B</ddr:hasAlternative>
+        <ddr:hasAlternative>Ni-Ru</ddr:hasAlternative>
+        <ddr:hasAlternative>Co-B/Ni</ddr:hasAlternative>
         <rdfs:comment>Type of catalyst used in experiment.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration"/>
+        <ddr:hasAlternative>Pt/C</ddr:hasAlternative>
+        <ddr:hasAlternative>Co-B</ddr:hasAlternative>
+        <rdfs:domain rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
     </owl:DatatypeProperty>
     
 
 
     <!-- http://dendro.fe.up.pt/ontology/hydrogen#gravimetricCapacity -->
 
-    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#gravimetricCapacity">
+    <owl:DatatypeProperty rdf:about="&ontology;hydrogen#gravimetricCapacity">
         <rdfs:label>Gravimetric Capacity</rdfs:label>
         <rdfs:comment>Gravimetric Hydrogen Storage Capacity</rdfs:comment>
-        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration"/>
+        <rdfs:domain rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
     </owl:DatatypeProperty>
     
 
 
     <!-- http://dendro.fe.up.pt/ontology/hydrogen#hydrationFactor -->
 
-    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#hydrationFactor">
+    <owl:DatatypeProperty rdf:about="&ontology;hydrogen#hydrationFactor">
         <rdfs:label>Hydration Factor</rdfs:label>
         <rdfs:comment>Amount of water used in reaction=2+x</rdfs:comment>
-        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration"/>
+        <rdfs:domain rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
     </owl:DatatypeProperty>
     
 
 
     <!-- http://dendro.fe.up.pt/ontology/hydrogen#hydrogenGenerationRate -->
 
-    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#hydrogenGenerationRate">
+    <owl:DatatypeProperty rdf:about="&ontology;hydrogen#hydrogenGenerationRate">
         <rdfs:label>Hydrogen Generation Rate</rdfs:label>
         <rdfs:comment>Amount of Hydrogen per minute</rdfs:comment>
-        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration"/>
+        <rdfs:domain rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
     </owl:DatatypeProperty>
     
 
 
     <!-- http://dendro.fe.up.pt/ontology/hydrogen#hydrolysis -->
 
-    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#hydrolysis">
+    <owl:DatatypeProperty rdf:about="&ontology;hydrogen#hydrolysis">
         <rdfs:label>Hydrolysis</rdfs:label>
-        <rdfs:comment>Type of hidrolysis reaction.</rdfs:comment>
+        <ddr:isClosed rdf:datatype="&xsd;boolean">true</ddr:isClosed>
+        <ddr:hasAlternative>Alkali-free hydrolysis</ddr:hasAlternative>
+        <ddr:hasAlternative>Classic hydrolysis</ddr:hasAlternative>
+        <rdfs:comment>Type of hydrolysis reaction.</rdfs:comment>
+        <ddr:hasAlternative>Acid hydrolysis</ddr:hasAlternative>
     </owl:DatatypeProperty>
     
 
 
     <!-- http://dendro.fe.up.pt/ontology/hydrogen#numberOfReutilization -->
 
-    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#numberOfReutilization">
+    <owl:DatatypeProperty rdf:about="&ontology;hydrogen#numberOfReutilization">
         <rdfs:label>Number Of Reutilization</rdfs:label>
         <rdfs:comment>Number of catalyst reutilizations.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
     </owl:DatatypeProperty>
     
 
 
     <!-- http://dendro.fe.up.pt/ontology/hydrogen#reactorType -->
 
-    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#reactorType">
+    <owl:DatatypeProperty rdf:about="&ontology;hydrogen#reactorType">
         <rdfs:label>Reactor Type</rdfs:label>
+        <ddr:isClosed rdf:datatype="&xsd;boolean">false</ddr:isClosed>
+        <ddr:hasAlternative>SRc - conical small reactor</ddr:hasAlternative>
         <rdfs:comment>Type of reactor used in experiment.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration"/>
+        <ddr:hasAlternative>LR - large reactor</ddr:hasAlternative>
+        <ddr:hasAlternative>EggR - ovoid  mini reactor</ddr:hasAlternative>
+        <ddr:hasAlternative>SRf - flat small reactor</ddr:hasAlternative>
+        <ddr:hasAlternative>MRc - conical medium reactor</ddr:hasAlternative>
+        <ddr:hasAlternative>MRf - flat medium reactor</ddr:hasAlternative>
+        <rdfs:domain rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
     </owl:DatatypeProperty>
     
 
 
     <!-- http://dendro.fe.up.pt/ontology/hydrogen#reagent -->
 
-    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#reagent">
+    <owl:DatatypeProperty rdf:about="&ontology;hydrogen#reagent">
         <rdfs:label>Reagent</rdfs:label>
+        <ddr:isClosed rdf:datatype="&xsd;boolean">false</ddr:isClosed>
         <rdfs:comment>Type of reagent used in experiment.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration"/>
+        <ddr:hasAlternative>LiAlH4</ddr:hasAlternative>
+        <ddr:hasAlternative>LiBH4</ddr:hasAlternative>
+        <ddr:hasAlternative>KBH4</ddr:hasAlternative>
+        <ddr:hasAlternative>NaBH4</ddr:hasAlternative>
+        <ddr:hasAlternative>NH3BH3</ddr:hasAlternative>
+        <rdfs:domain rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
     </owl:DatatypeProperty>
     
 
@@ -136,16 +274,274 @@
 
     <!-- http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration -->
 
-    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/hydrogen#HydrogenGeneration">
+    <owl:Class rdf:about="&ontology;hydrogen#HydrogenGeneration">
         <rdfs:label>Hydrogen Generation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/research#Experiment"/>
+        <rdfs:subClassOf rdf:resource="&ontology;research#Experiment"/>
     </owl:Class>
     
 
 
     <!-- http://dendro.fe.up.pt/ontology/research#Experiment -->
 
-    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/research#Experiment"/>
+    <owl:Class rdf:about="&ontology;research#Experiment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/1.0 -->
+
+    <owl:Thing rdf:about="http://dendro.fe.up.pt/1.0">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Additive_1 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Additive_1">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:reagent rdf:datatype="&xsd;string">SDS</hydrogen:reagent>
+        <rdfs:comment>Type 1 of additive - SDS</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Additive_2 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Additive_2">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:reagent rdf:datatype="&xsd;string">CMC</hydrogen:reagent>
+        <rdfs:comment>Type 2 of additive - CMC</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Catalyst_1 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Catalyst_1">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:catalyst rdf:datatype="&xsd;string">Ni-Ru</hydrogen:catalyst>
+        <rdfs:comment>Type 1 of catalyst - Ni-Ru</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Catalyst_2 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Catalyst_2">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:catalyst rdf:datatype="&xsd;string">Pt/C</hydrogen:catalyst>
+        <rdfs:comment>Type 2 of catalyst - Pt/C</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Catalyst_3 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Catalyst_3">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:catalyst rdf:datatype="&xsd;string">Co-B</hydrogen:catalyst>
+        <rdfs:comment>Type 3 of catalyst - Co-B</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Catalyst_4 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Catalyst_4">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:catalyst rdf:datatype="&xsd;string">Co-Mn-B</hydrogen:catalyst>
+        <rdfs:comment>Type 4 of catalyst - Co-Mn-B</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Catalyst_5 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Catalyst_5">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:catalyst rdf:datatype="&xsd;string">Co-B/Ni</hydrogen:catalyst>
+        <rdfs:comment>Type 5 of catalyst - Co-B/Ni</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Hydrolysis_1 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Hydrolysis_1">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:hydrolysis rdf:datatype="&xsd;string">Acid hydrolysis</hydrogen:hydrolysis>
+        <rdfs:comment>Type 1 of hydrolysis reaction - Acid hydrolysis</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Hydrolysis_2 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Hydrolysis_2">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:hydrolysis rdf:datatype="&xsd;string">Alkali-free hydrolysis</hydrogen:hydrolysis>
+        <rdfs:comment>Type 2 of hydrolysis reaction - Alkali-free hydrolysis</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Hydrolysis_3 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Hydrolysis_3">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:hydrolysis rdf:datatype="&xsd;string">Classic hydrolysis</hydrogen:hydrolysis>
+        <rdfs:comment>Type 3 of hydrolysis reaction - Classic hydrolysis</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Reactor_Type_1 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Reactor_Type_1">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:reactorType rdf:datatype="&xsd;string">EggR - ovoid  mini reactor</hydrogen:reactorType>
+        <rdfs:comment>Type 1 of reactor - EggR - ovoid mini reactor.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Reactor_Type_2 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Reactor_Type_2">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:reactorType rdf:datatype="&xsd;string">LR - large reactor</hydrogen:reactorType>
+        <rdfs:comment>Type 2 of reactor - LR - large reactor</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Reactor_Type_3 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Reactor_Type_3">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:reactorType rdf:datatype="&xsd;string">MRc - conical medium reactor</hydrogen:reactorType>
+        <rdfs:comment>Type 3 of reactor - MRc - conical medium reactor</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Reactor_Type_4 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Reactor_Type_4">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:reactorType rdf:datatype="&xsd;string">MRf - flat medium reactor</hydrogen:reactorType>
+        <rdfs:comment>Type 4 of reactor - MRf - flat medium reactor</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Reactor_Type_5 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Reactor_Type_5">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:reactorType rdf:datatype="&xsd;string">SRc - conical small reactor</hydrogen:reactorType>
+        <rdfs:comment>Type 5 of reactor - SRc - conical small reactor</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Reactor_Type_6 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Reactor_Type_6">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:reactorType rdf:datatype="&xsd;string">SRf - flat small reactor</hydrogen:reactorType>
+        <rdfs:comment>Type 6 of reactor - SRf - flat small reactor</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Reagent_1 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Reagent_1">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:reagent rdf:datatype="&xsd;string">NaBH4</hydrogen:reagent>
+        <rdfs:comment>Type 1 of reagent - NaBH4</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Reagent_2 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Reagent_2">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:reagent rdf:datatype="&xsd;string">NH3BH3</hydrogen:reagent>
+        <rdfs:comment>Type 2 of reagent - NH3BH3</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Reagent_3 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Reagent_3">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:reagent rdf:datatype="&xsd;string">LiAlH4</hydrogen:reagent>
+        <rdfs:comment>Type 23 of reagent - LiAlH4</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Reagent_4 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Reagent_4">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:reagent rdf:datatype="&xsd;string">LiBH4</hydrogen:reagent>
+        <rdfs:comment>Type 4 of reagent - LiBH4</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/hydrogen#Reagent_5 -->
+
+    <owl:Thing rdf:about="&ontology;hydrogen#Reagent_5">
+        <rdf:type rdf:resource="&ontology;hydrogen#HydrogenGeneration"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <hydrogen:reagent rdf:datatype="&xsd;string">KBH4</hydrogen:reagent>
+        <rdfs:comment>Type 5 of reagent - KBH4</rdfs:comment>
+    </owl:Thing>
 </rdf:RDF>
 
 
