@@ -1,0 +1,440 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://dendro.fe.up.pt/ontology/ddiup#"
+     xml:base="http://dendro.fe.up.pt/ontology/ddiup"
+     xmlns:ddiup="http://dendro.fe.up.pt/ontology/ddiup#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:discovery="http://rdf-vocabulary.ddialliance.org/discovery#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://dendro.fe.up.pt/ontology/ddiup#">
+        <owl:imports rdf:resource="http://rdf-vocabulary.ddialliance.org/discovery"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#Sampling_Procedure -->
+
+    <owl:ObjectProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#Sampling_Procedure"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#data_collection -->
+
+    <owl:ObjectProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#data_collection"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#dependent_dimension -->
+
+    <owl:ObjectProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#dependent_dimension"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#deviation_from_sample_design -->
+
+    <owl:ObjectProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#deviation_from_sample_design"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#independent_dimension -->
+
+    <owl:ObjectProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#independent_dimension"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#methodology -->
+
+    <owl:ObjectProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#methodology"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#scale_dimension -->
+
+    <owl:ObjectProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#scale_dimension"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#scale_domain -->
+
+    <owl:ObjectProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#scale_domain"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#scale_reference -->
+
+    <owl:ObjectProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#scale_reference"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#time_method -->
+
+    <owl:ObjectProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#time_method"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#analysis_unit -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#analysis_unit"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#based_on -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#based_on"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#collection_mode -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#collection_mode"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#concept -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#concept"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#data_collection -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#data_collection"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#data_file -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#data_file"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#dependent_dimension -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#dependent_dimension"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#deviation_from_sample_design -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#deviation_from_sample_design"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#independent_dimension -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#independent_dimension"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#instrument -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#instrument"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#kind_of_data -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#kind_of_data"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#methodology -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#methodology"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#product -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#product"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#question -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#question"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#representation -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#representation"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#response_domain -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#response_domain"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#sample_size -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#sample_size"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#sampling_procedure -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#sampling_procedure"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#scale_dimension -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#scale_dimension"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#scale_domain -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#scale_domain"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#scale_reference -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#scale_reference"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#statistics_category -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#statistics_category"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#statistics_data_file -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#statistics_data_file"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#statistics_variable -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#statistics_variable"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#summary_statistics_type -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#summary_statistics_type"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#time_method -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#time_method"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#universe -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#universe"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#variable -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#variable"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/ddiup#weighted_by -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/ddiup#weighted_by"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##Sampling_Procedure">
+        <rdfs:label>Sampling Procedure</rdfs:label>
+        <rdfs:comment>Describes the type of sample, sample design and provides details on drawing the sample.</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</rdfs:isDefinedBy>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##analysis_unit">
+        <rdfs:comment>analysis unit of a Study, a StudyGroup, or a Variable.</rdfs:comment>
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+        <rdfs:label>Analysis Unit</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##based_on">
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+        <rdfs:comment>points to the RepresentedVariable the Variable is based on.</rdfs:comment>
+        <rdfs:label>Based On</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##collection_mode">
+        <rdfs:label>Collection Mode</rdfs:label>
+        <rdfs:comment>mode of collection of a Questionnaire</rdfs:comment>
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##concept">
+        <rdfs:comment>points to the DDI concept of a RepresentedVariable, a Variable, or a Question</rdfs:comment>
+        <rdfs:label>Concept</rdfs:label>
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##data_collection">
+        <rdfs:isDefinedBy>http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</rdfs:isDefinedBy>
+        <rdfs:comment>A maintainable module containing information on activities related to data collection/capture and the processing required for the creation a data product. This section covers the methodologies, events, data sources, collection instruments and processes which comprise the collection/capture and processing of data. Methodology covers approaches used for selecting samples, administering surveys, timing repeated data collection activities. Collection Event specifies data sources, collection instruments, questions and question flow, and data processing activities. This module houses Processing Instructions (General Instructions and Generation Instructions) which may be referenced by variables or comparison maps. It houses the following schemes: Question Scheme, Control Construct Scheme (questionnaire flow), Interviewer Instruction Scheme, Instrument Scheme, Processing Event Scheme, and Processing Instruction Scheme.</rdfs:comment>
+        <rdfs:label>Data Collection</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##data_file">
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+        <rdfs:comment>points to the DataFile of a Study or a LogicalDataSet.</rdfs:comment>
+        <rdfs:label>Data File</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##dependent_dimension">
+        <rdfs:label>Dependent Dimension</rdfs:label>
+        <rdfs:isDefinedBy>http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</rdfs:isDefinedBy>
+        <rdfs:comment>The rank of a dimension that acts as the numerator.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##deviation_from_sample_design">
+        <rdfs:label>Deviation From Sample Design</rdfs:label>
+        <rdfs:isDefinedBy>http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</rdfs:isDefinedBy>
+        <rdfs:comment>Describes any deviations from the planned sample design.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##independent_dimension">
+        <rdfs:label>Independent Dimension</rdfs:label>
+        <rdfs:isDefinedBy>http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</rdfs:isDefinedBy>
+        <rdfs:comment>The rank of a dimension that acts as the denominator (independent variable).</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##instrument">
+        <rdfs:label>Instrument
+</rdfs:label>
+        <rdfs:comment>Indicates the Instrument of a Study or a LogicalDataSet.</rdfs:comment>
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##kind_of_data">
+        <rdfs:label>Kind Of Data</rdfs:label>
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+        <rdfs:comment>The general kind of data (e.g. geospatial, register, survey) collected in this study, given either as a skos:Concept, or as a blank node with attached free-text rdfs:label.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##methodology">
+        <rdfs:comment>Metadata regarding the methodologies used concerning data collection, determining the timing and repetition patterns for data collection, and sampling procedures.</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</rdfs:isDefinedBy>
+        <rdfs:label>Methodology</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##product">
+        <rdfs:label>Product</rdfs:label>
+        <rdfs:comment>Indicates the LogicalDataSets of a Studies.</rdfs:comment>
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##question">
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+        <rdfs:label>Question</rdfs:label>
+        <rdfs:comment>Indicates the Questions associated to Variables or contained in Questionnaires.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##representation">
+        <rdfs:comment>RepresentedVariables and Variables can have a Representation whose individuals are either of the class rdfs:Datatype (to represent values) or skos:ConceptScheme (to represent code lists).</rdfs:comment>
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+        <rdfs:label>Representation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##response_domain">
+        <rdfs:label>Response Domain</rdfs:label>
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+        <rdfs:comment>The response domain of questions.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##sample_size">
+        <rdfs:comment>The size of the sample from whom data was requested.</rdfs:comment>
+        <rdfs:label>Sample Size
+</rdfs:label>
+        <rdfs:isDefinedBy>http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</rdfs:isDefinedBy>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##sampling_procedure">
+        <rdfs:comment>Describes the type of sample, sample design and provides details on drawing the sample.</rdfs:comment>
+        <rdfs:label>Sampling Procedure</rdfs:label>
+        <rdfs:isDefinedBy>http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</rdfs:isDefinedBy>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##scale_dimension">
+        <rdfs:comment>Defines a dimension of a scale.</rdfs:comment>
+        <rdfs:label>Scale Dimension</rdfs:label>
+        <rdfs:isDefinedBy>http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</rdfs:isDefinedBy>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##scale_domain">
+        <rdfs:isDefinedBy>http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</rdfs:isDefinedBy>
+        <rdfs:label>Scale Domain</rdfs:label>
+        <rdfs:comment>A response domain capturing a scale response which describes a 1..n dimensional scale of various display types for a question. A ScaleDomain may also be provided by reference.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##scale_reference">
+        <rdfs:comment>Defines the representation of a scale (either numeric or text).</rdfs:comment>
+        <rdfs:label>Scale Reference</rdfs:label>
+        <rdfs:isDefinedBy>http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</rdfs:isDefinedBy>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##statistics_category">
+        <rdfs:comment>Indicates the skos:Concept (representing codes and categories) of a specific CategoryStatistics individual.</rdfs:comment>
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+        <rdfs:label>Statistics Category</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##statistics_data_file">
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+        <rdfs:label>Statistics Data File</rdfs:label>
+        <rdfs:comment>Indicates the DataFile of a specific DesciptiveStatistics individual.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##statistics_variable">
+        <rdfs:comment>Indicates the Variable of a specific SummaryStatistics individual.</rdfs:comment>
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+        <rdfs:label>Statistics Variable</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##summary_statistics_type">
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+        <rdfs:label>Summary Statistics Type</rdfs:label>
+        <rdfs:comment>summary statistics type</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##time_method">
+        <rdfs:comment>Describes the time method or time dimension of the data collection.</rdfs:comment>
+        <rdfs:label>Time Method</rdfs:label>
+        <rdfs:isDefinedBy>http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</rdfs:isDefinedBy>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##universe">
+        <rdfs:label>Universe</rdfs:label>
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+        <rdfs:comment>Indicates the Universe(s) of Studies, StudyGrous, RepresentedVariables, Variables, Questions, and LogicalDataSets.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##variable">
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+        <rdfs:label>Variable</rdfs:label>
+        <rdfs:comment>Indicates the Variable of a Study.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/ddiup##weighted_by">
+        <rdfs:isDefinedBy>http://rdf-vocabulary.ddialliance.org/discovery</rdfs:isDefinedBy>
+        <rdfs:label>Weighted By</rdfs:label>
+        <rdfs:comment>SummaryStatistics or CategoryStatistics resources may be weighted by a specific Variable.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
