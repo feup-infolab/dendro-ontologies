@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://dendro.fe.up.pt/ontology/ddiup"
+     xml:base="http://dendro.fe.up.pt/ontology/ddiup#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://dendro.fe.up.pt/ontology/ddiup">
+     ontologyIRI="http://dendro.fe.up.pt/ontology/ddiup#">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -25,121 +25,121 @@
     <Prefix name="discovery" IRI="http://rdf-vocabulary.ddialliance.org/discovery#"/>
     <Import>http://rdf-vocabulary.ddialliance.org/discovery</Import>
     <Declaration>
-        <ObjectProperty IRI="#Sampling_Procedure"/>
+        <ObjectProperty IRI="Sampling_Procedure"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#data_collection"/>
+        <ObjectProperty IRI="data_collection"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#dependent_dimension"/>
+        <ObjectProperty IRI="dependent_dimension"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#deviation_from_sample_design"/>
+        <ObjectProperty IRI="deviation_from_sample_design"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#independent_dimension"/>
+        <ObjectProperty IRI="independent_dimension"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#methodology"/>
+        <ObjectProperty IRI="methodology"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#scale_dimension"/>
+        <ObjectProperty IRI="scale_dimension"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#scale_domain"/>
+        <ObjectProperty IRI="scale_domain"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#scale_reference"/>
+        <ObjectProperty IRI="scale_reference"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#time_method"/>
+        <ObjectProperty IRI="time_method"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#analysis_unit"/>
+        <DataProperty IRI="analysis_unit"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#based_on"/>
+        <DataProperty IRI="based_on"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#collection_mode"/>
+        <DataProperty IRI="collection_mode"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#concept"/>
+        <DataProperty IRI="concept"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#data_collection"/>
+        <DataProperty IRI="data_collection"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#data_file"/>
+        <DataProperty IRI="data_file"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#dependent_dimension"/>
+        <DataProperty IRI="dependent_dimension"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#deviation_from_sample_design"/>
+        <DataProperty IRI="deviation_from_sample_design"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#independent_dimension"/>
+        <DataProperty IRI="independent_dimension"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#instrument"/>
+        <DataProperty IRI="instrument"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#kind_of_data"/>
+        <DataProperty IRI="kind_of_data"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#methodology"/>
+        <DataProperty IRI="methodology"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#product"/>
+        <DataProperty IRI="product"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#question"/>
+        <DataProperty IRI="question"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#representation"/>
+        <DataProperty IRI="representation"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#response_domain"/>
+        <DataProperty IRI="response_domain"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#sample_size"/>
+        <DataProperty IRI="sample_size"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#sampling_procedure"/>
+        <DataProperty IRI="sampling_procedure"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#scale_dimension"/>
+        <DataProperty IRI="scale_dimension"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#scale_domain"/>
+        <DataProperty IRI="scale_domain"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#scale_reference"/>
+        <DataProperty IRI="scale_reference"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#statistics_category"/>
+        <DataProperty IRI="statistics_category"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#statistics_data_file"/>
+        <DataProperty IRI="statistics_data_file"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#statistics_variable"/>
+        <DataProperty IRI="statistics_variable"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#summary_statistics_type"/>
+        <DataProperty IRI="summary_statistics_type"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#time_method"/>
+        <DataProperty IRI="time_method"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#universe"/>
+        <DataProperty IRI="universe"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#variable"/>
+        <DataProperty IRI="variable"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#weighted_by"/>
+        <DataProperty IRI="weighted_by"/>
     </Declaration>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
