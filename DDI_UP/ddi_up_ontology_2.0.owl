@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://dendro.fe.up.pt/ontology/ddiup"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://dendro.fe.up.pt/ontology/ddiup">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="ddiup" IRI="http://dendro.fe.up.pt/ontology/ddiup#"/>
+    <Prefix name="discovery" IRI="http://rdf-vocabulary.ddialliance.org/discovery#"/>
+    <Import>http://rdf-vocabulary.ddialliance.org/discovery</Import>
+    <Declaration>
+        <ObjectProperty IRI="#Sampling_Procedure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#data_collection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dependent_dimension"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deviation_from_sample_design"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#independent_dimension"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#methodology"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#scale_dimension"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#scale_domain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#scale_reference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#time_method"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#analysis_unit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#based_on"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#collection_mode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#concept"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#data_collection"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#data_file"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dependent_dimension"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#deviation_from_sample_design"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#independent_dimension"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#instrument"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#kind_of_data"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#methodology"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#product"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#question"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#representation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#response_domain"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sample_size"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sampling_procedure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#scale_dimension"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#scale_domain"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#scale_reference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#statistics_category"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#statistics_data_file"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#statistics_variable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#summary_statistics_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#time_method"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#universe"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#variable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#weighted_by"/>
+    </Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sampling_Procedure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Describes the type of sample, sample design and provides details on drawing the sample.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Sampling_Procedure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sampling_Procedure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sampling Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#analysis_unit</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">analysis unit of a Study, a StudyGroup, or a Variable.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#analysis_unit</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#analysis_unit</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Analysis Unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#based_on</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">points to the RepresentedVariable the Variable is based on.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#based_on</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#based_on</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Based On</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#collection_mode</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">mode of collection of a Questionnaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#collection_mode</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#collection_mode</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Collection Mode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#concept</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">points to the DDI concept of a RepresentedVariable, a Variable, or a Question</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#concept</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#concept</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#data_collection</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A maintainable module containing information on activities related to data collection/capture and the processing required for the creation a data product. This section covers the methodologies, events, data sources, collection instruments and processes which comprise the collection/capture and processing of data. Methodology covers approaches used for selecting samples, administering surveys, timing repeated data collection activities. Collection Event specifies data sources, collection instruments, questions and question flow, and data processing activities. This module houses Processing Instructions (General Instructions and Generation Instructions) which may be referenced by variables or comparison maps. It houses the following schemes: Question Scheme, Control Construct Scheme (questionnaire flow), Interviewer Instruction Scheme, Instrument Scheme, Processing Event Scheme, and Processing Instruction Scheme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#data_collection</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#data_collection</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Data Collection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#data_file</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">points to the DataFile of a Study or a LogicalDataSet.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#data_file</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#data_file</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Data File</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dependent_dimension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The rank of a dimension that acts as the numerator.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#dependent_dimension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dependent_dimension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dependent Dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#deviation_from_sample_design</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Describes any deviations from the planned sample design.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#deviation_from_sample_design</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#deviation_from_sample_design</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Deviation From Sample Design</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#independent_dimension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The rank of a dimension that acts as the denominator (independent variable).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#independent_dimension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#independent_dimension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Independent Dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#instrument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates the Instrument of a Study or a LogicalDataSet.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#instrument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#instrument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Instrument
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#kind_of_data</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The general kind of data (e.g. geospatial, register, survey) collected in this study, given either as a skos:Concept, or as a blank node with attached free-text rdfs:label.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#kind_of_data</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#kind_of_data</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kind Of Data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#methodology</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Metadata regarding the methodologies used concerning data collection, determining the timing and repetition patterns for data collection, and sampling procedures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#methodology</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#methodology</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Methodology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#product</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates the LogicalDataSets of a Studies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#product</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#product</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#question</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates the Questions associated to Variables or contained in Questionnaires.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#question</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#question</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Question</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#representation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RepresentedVariables and Variables can have a Representation whose individuals are either of the class rdfs:Datatype (to represent values) or skos:ConceptScheme (to represent code lists).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#representation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#representation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Representation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#response_domain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The response domain of questions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#response_domain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#response_domain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Response Domain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sample_size</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The size of the sample from whom data was requested.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#sample_size</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sample_size</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sample Size
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sampling_procedure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Describes the type of sample, sample design and provides details on drawing the sample.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#sampling_procedure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sampling_procedure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sampling Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#scale_dimension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Defines a dimension of a scale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#scale_dimension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#scale_dimension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Scale Dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#scale_domain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A response domain capturing a scale response which describes a 1..n dimensional scale of various display types for a question. A ScaleDomain may also be provided by reference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#scale_domain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#scale_domain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Scale Domain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#scale_reference</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Defines the representation of a scale (either numeric or text).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#scale_reference</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#scale_reference</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Scale Reference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#statistics_category</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates the skos:Concept (representing codes and categories) of a specific CategoryStatistics individual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#statistics_category</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#statistics_category</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Statistics Category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#statistics_data_file</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates the DataFile of a specific DesciptiveStatistics individual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#statistics_data_file</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#statistics_data_file</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Statistics Data File</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#statistics_variable</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates the Variable of a specific SummaryStatistics individual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#statistics_variable</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#statistics_variable</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Statistics Variable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#summary_statistics_type</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">summary statistics type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#summary_statistics_type</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#summary_statistics_type</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Summary Statistics Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#time_method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Describes the time method or time dimension of the data collection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#time_method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.ddialliance.org/Specification/DDI-Lifecycle/3.2/XMLSchema/FieldLevelDocumentation/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#time_method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Time Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#universe</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates the Universe(s) of Studies, StudyGrous, RepresentedVariables, Variables, Questions, and LogicalDataSets.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#universe</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#universe</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Universe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#variable</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates the Variable of a Study.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#variable</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#variable</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Variable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#weighted_by</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SummaryStatistics or CategoryStatistics resources may be weighted by a specific Variable.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#weighted_by</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://rdf-vocabulary.ddialliance.org/discovery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#weighted_by</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Weighted By</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
