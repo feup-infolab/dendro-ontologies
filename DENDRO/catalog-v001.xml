@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1432650763592" name="http://dendro.fe.up.pt/ontology/0.1/" uri="dendro.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513966176470" name="http://dendro.fe.up.pt/ontology/0.1/" uri="dendro.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513966176470" name="shadowed:http://dendro.fe.up.pt/ontology/0.1/" uri="Old%20Versions/dendro.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513966176470" name="shadowed:http://dendro.fe.up.pt/ontology/0.1/" uri="Old%20Versions/22-12-2017/dendro.owl"/>
     </group>
 </catalog>

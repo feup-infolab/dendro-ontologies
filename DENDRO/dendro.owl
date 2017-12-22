@@ -1,124 +1,801 @@
 <?xml version="1.0"?>
-<rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:p2="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/nfo_data.rdfs#"
-    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-    xmlns:p1="http://www.semanticdesktop.org/ontologies/2007/01/19/nie/nie_data.rdfs#"
-    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-    xmlns:ddr="http://dendro.fe.up.pt/ontology/0.1/"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://dendro.fe.up.pt/ontology/0.1/">
-  <owl:Ontology rdf:about="">
-    <owl:imports rdf:resource="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/nfo_data.rdfs"/>
-    <owl:imports rdf:resource="http://www.semanticdesktop.org/ontologies/2007/01/19/nie/nie_data.rdfs"/>
-    <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
-    <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
-  </owl:Ontology>
-  <rdfs:Class rdf:about="http://dendro.fe.up.pt/ontology/0.1/Project">
-    <rdfs:subClassOf>
-      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    </rdfs:subClassOf>
-    <rdfs:comment xml:lang="en">A Dendro Project.</rdfs:comment>
-    <rdfs:label xml:lang="en">Project</rdfs:label>
-  </rdfs:Class>
-  <rdfs:Class rdf:about="http://dendro.fe.up.pt/ontology/0.1/HarvestedResource">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <rdfs:comment xml:lang="en">A resource harvested from an external data repository.</rdfs:comment>
-    <rdfs:label xml:lang="en">Harvested Resource</rdfs:label>
-  </rdfs:Class>
-  <rdfs:Class rdf:about="http://dendro.fe.up.pt/ontology/0.1/User">
-    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdfs:Class>
-  <rdfs:Class rdf:about="http://www.semanticdesktop.org/ontologies/2007/03/22/nco#Contact"/>
-  <rdfs:Class rdf:about="http://dendro.fe.up.pt/ontology/0.1/Researcher">
-    <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/0.1/User"/>
-  </rdfs:Class>
-  <rdfs:Class rdf:about="http://dendro.fe.up.pt/ontology/0.1/Repository">
-    <rdfs:subClassOf rdf:resource="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Website"/>
-    <rdfs:comment xml:lang="en">A Data Repository (Website)</rdfs:comment>
-    <rdfs:label xml:lang="en">Repository</rdfs:label>
-  </rdfs:Class>
-  <rdfs:Class rdf:about="http://dendro.fe.up.pt/ontology/0.1/ExternalRepository">
-    <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/0.1/Repository"/>
-    <rdfs:comment xml:lang="en">A Data Repository that is not a Dendro instance.</rdfs:comment>
-    <rdfs:label xml:lang="en">External Repository</rdfs:label>
-  </rdfs:Class>
-  <owl:ObjectProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/sourceRepository">
-    <rdfs:range rdf:resource="http://dendro.fe.up.pt/ontology/0.1/ExternalRepository"/>
-    <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/0.1/HarvestedResource"/>
-    <rdfs:comment xml:lang="en">The external repository from which the resource was harvested</rdfs:comment>
-    <rdfs:label xml:lang="en">Source Repository</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/rootFolder">
-    <rdfs:range rdf:resource="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Folder"/>
-    <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/0.1/Project"/>
-    <rdfs:label xml:lang="en">Root Folder</rdfs:label>
-    <rdfs:comment xml:lang="en">The root folder of a Dendro Project</rdfs:comment>
-  </owl:ObjectProperty>
-  <rdf:Property rdf:about="http://dendro.fe.up.pt/ontology/0.1/md5Checksum">
-    <rdfs:label xml:lang="en">MD5 Checksum</rdfs:label>
-    <rdfs:subPropertyOf>
-      <rdf:Property rdf:about="http://dendro.fe.up.pt/ontology/0.1/checksum"/>
-    </rdfs:subPropertyOf>
-    <rdfs:comment xml:lang="en">The checksum of a file or folder, calculated using the MD5 sum algorithm,</rdfs:comment>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Property>
-  <rdf:Property rdf:about="http://purl.org/dc/terms/license"/>
-  <rdf:Property rdf:about="http://www.semanticdesktop.org/ontologies/2007/08/15/nao#identifier"/>
-  <rdf:Property rdf:about="http://dendro.fe.up.pt/ontology/0.1/handle">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label xml:lang="en">Project Handle</rdfs:label>
-    <rdfs:comment xml:lang="en">A unique handle for a Dendro Project.</rdfs:comment>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
-    <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/0.1/Project"/>
-  </rdf:Property>
-  <rdf:Property rdf:about="http://www.semanticdesktop.org/ontologies/2007/03/22/nco#creator"/>
-  <rdf:Property rdf:about="http://dendro.fe.up.pt/ontology/0.1/username">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/0.1/Researcher"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
-    <rdfs:comment xml:lang="en">The username (sequence of alphanumeric characters) of a Dendro-registered researcher</rdfs:comment>
-    <rdfs:label xml:lang="en">Username</rdfs:label>
-  </rdf:Property>
-  <rdf:Property rdf:about="http://dendro.fe.up.pt/ontology/0.1/password">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label xml:lang="en">Password</rdfs:label>
-    <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/0.1/Researcher"/>
-    <rdfs:comment xml:lang="en">A researcher's encrypted password.</rdfs:comment>
-  </rdf:Property>
-  <rdf:Property rdf:about="http://purl.org/dc/terms/created"/>
-  <rdf:Property rdf:about="http://purl.org/dc/terms/creator"/>
-  <rdf:Property rdf:about="http://dendro.fe.up.pt/ontology/0.1/text_content">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#InformationElement"/>
-    <rdfs:comment xml:lang="en">The textual content of a resource, extracted programmatically or not.</rdfs:comment>
-    <rdfs:label xml:lang="en">Text Content</rdfs:label>
-  </rdf:Property>
-  <rdf:Property rdf:about="http://dendro.fe.up.pt/ontology/0.1/checksum">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:comment xml:lang="en">The file checksum of a given resource.</rdfs:comment>
-    <rdfs:label xml:lang="en">File Checksum</rdfs:label>
-    <rdfs:domain rdf:resource="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#InformationElement"/>
-  </rdf:Property>
-  <rdf:Property rdf:about="http://dendro.fe.up.pt/ontology/0.1/fileExtension">
-    <rdfs:domain rdf:resource="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#InformationElement"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label xml:lang="en">File Extension</rdfs:label>
-    <rdfs:comment xml:lang="en">The file extension of the file</rdfs:comment>
-  </rdf:Property>
-  <rdf:Property rdf:about="http://purl.org/dc/terms/accessRights"/>
-  <rdf:Property rdf:about="http://purl.org/dc/terms/hasVersion"/>
-  <rdf:Property rdf:about="http://purl.org/dc/terms/isPartOf"/>
-  <rdf:Property rdf:about="http://purl.org/dc/terms/hasPart"/>
-  <rdf:Property rdf:about="http://dendro.fe.up.pt/ontology/0.1/lastHarvested">
-    <rdfs:subPropertyOf rdf:resource="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#lastRefreshed"/>
-    <rdfs:comment xml:lang="en">Time of last harvesting of an external resource</rdfs:comment>
-    <rdfs:label xml:lang="en">Last Harvested</rdfs:label>
-  </rdf:Property>
+<rdf:RDF xmlns="http://dendro.fe.up.pt/ontology/0.1/"
+     xml:base="http://dendro.fe.up.pt/ontology/0.1/"
+     xmlns:p1="http://www.semanticdesktop.org/ontologies/2007/01/19/nie/nie_data.rdfs#"
+     xmlns:p2="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/nfo_data.rdfs#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:nie="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#"
+     xmlns:ddr="http://dendro.fe.up.pt/ontology/0.1/"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://dendro.fe.up.pt/ontology/0.1/">
+        <owl:imports rdf:resource="http://www.semanticdesktop.org/ontologies/2007/01/19/nie/nie_data.rdfs"/>
+        <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
+        <owl:imports rdf:resource="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/nfo_data.rdfs"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/checksum -->
+
+    <owl:AnnotationProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/checksum">
+        <rdfs:domain rdf:resource="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#InformationElement"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/fileExtension -->
+
+    <owl:AnnotationProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/fileExtension">
+        <rdfs:domain rdf:resource="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#InformationElement"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/handle -->
+
+    <owl:AnnotationProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/handle">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/0.1/Project"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/lastHarvested -->
+
+    <owl:AnnotationProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/lastHarvested">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#lastRefreshed"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/text_content -->
+
+    <owl:AnnotationProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/text_content">
+        <rdfs:domain rdf:resource="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#InformationElement"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/username -->
+
+    <owl:AnnotationProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/username">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/0.1/Researcher"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticdesktop.org/ontologies/2007/01/19/nie#lastRefreshed -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#lastRefreshed"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/rootFolder -->
+
+    <owl:ObjectProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/rootFolder">
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/0.1/Project"/>
+        <rdfs:range rdf:resource="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Folder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/sourceRepository -->
+
+    <owl:ObjectProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/sourceRepository">
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/0.1/HarvestedResource"/>
+        <rdfs:range rdf:resource="http://dendro.fe.up.pt/ontology/0.1/ExternalRepository"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/actionType -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/actionType"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/authorUri -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/authorUri"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/beingBackedUp -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/beingBackedUp"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/changeIndex -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/changeIndex"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/changeType -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/changeType"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/changedDescriptor -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/changedDescriptor"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/checksum -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/checksum">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/chunkSize -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/chunkSize"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/commentMsg -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/commentMsg"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/contentType -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/contentType"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/created -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/created">
+        <rdfs:label>Date created</rdfs:label>
+        <rdfs:label>The date of creation of this resource in Dendro</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/creatorUri -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/creatorUri"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/deleted -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/deleted"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/executedOver -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/executedOver"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/exportedAt -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/exportedAt"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/fileExtension -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/fileExtension">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/fileVersionUri -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/fileVersionUri"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/generic -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/generic"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/handle -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/handle"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasAPIKey -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasAPIKey"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasAccessToken -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasAccessToken"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasAvatar -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasAvatar"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasConsumerKey -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasConsumerKey"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasConsumerSecret -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasConsumerSecret"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasContent -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasContent"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasDataContent -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasDataContent"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasDataProcessingError -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasDataProcessingError"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasExternalUri -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasExternalUri"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasFontAwesomeClass -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasFontAwesomeClass">
+        <rdfs:comment>The Font Awesome class of the resource to use in rendering the resource in the Dendro interface. This is a technical property that has little value.</rdfs:comment>
+        <rdfs:label>Font Awesome Class</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasOrganization -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasOrganization"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasPlatform -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasPlatform"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasPrefix -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasPrefix"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasResearchDomain -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasResearchDomain"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasStorageLimit -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasStorageLimit"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasSwordCollectionLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasSwordCollectionLabel"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasSwordCollectionUri -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasSwordCollectionUri">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/hasUsername -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/hasUsername"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/humanReadableURI -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/humanReadableURI">
+        <rdfs:comment>A human-readable version of the resource in Dendro. May be outdated!, use the non-human-readable URI for a more persistent identifier.</rdfs:comment>
+        <rdfs:label>Human-Readable URI</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/interactionType -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/interactionType"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/isVersionOf -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/isVersionOf"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/is_being_imported -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/is_being_imported"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/itemType -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/itemType"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/lastDescriptorRecommendationsList -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/lastDescriptorRecommendationsList"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/lastHarvested -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/lastHarvested"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/md5Checksum -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/md5Checksum">
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/0.1/checksum"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The checksum of a file or folder, calculated using the MD5 sum algorithm,</rdfs:comment>
+        <rdfs:label xml:lang="en">MD5 Checksum</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/metadataQuality -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/metadataQuality">
+        <rdfs:comment>An estimate of the quality of the metadata given to the resource, provided by the Dendro platform</rdfs:comment>
+        <rdfs:label>Metadata Quality</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/modified -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/modified">
+        <rdfs:subPropertyOf rdf:resource="http://dendro.fe.up.pt/ontology/0.1/modified"/>
+        <rdfs:comment>The last modification data of the resource in Dendro</rdfs:comment>
+        <rdfs:label>Last Modified</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/newValue -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/newValue"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/numLikes -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/numLikes"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/oldValue -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/oldValue"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/orcid -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/orcid"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/originallyRecommendedFor -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/originallyRecommendedFor"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/pageNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/pageNumber"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/password -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/password">
+        <rdfs:domain rdf:resource="http://dendro.fe.up.pt/ontology/0.1/Researcher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A researcher&apos;s encrypted password.</rdfs:comment>
+        <rdfs:label xml:lang="en">Password</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/password_reset_token -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/password_reset_token"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/performedBy -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/performedBy"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/pertainsTo -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/pertainsTo"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/postURI -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/postURI"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/privacyStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/privacyStatus"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/processingData -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/processingData"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/projectUri -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/projectUri"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/rankingPosition -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/rankingPosition"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/recommendationCallId -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/recommendationCallId"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/recommendationCallTimeStamp -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/recommendationCallTimeStamp"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/requiresVerifiedUploads -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/requiresVerifiedUploads"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/resourceAuthorUri -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/resourceAuthorUri"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/resourceTargetUri -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/resourceTargetUri"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/rootFolder -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/rootFolder">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/salt -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/salt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/shareMsg -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/shareMsg"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/shareURI -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/shareURI"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/sourceRepository -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/sourceRepository"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/text_content -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/text_content">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/userWhoActed -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/userWhoActed"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/userWhoCommented -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/userWhoCommented"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/userWhoLiked -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/userWhoLiked"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/userWhoShared -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/userWhoShared"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/username -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/username"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/usersWhoLiked -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/usersWhoLiked"/>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/versionCreator -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/versionCreator">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/versionNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://dendro.fe.up.pt/ontology/0.1/versionNumber"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/ExternalRepository -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/0.1/ExternalRepository">
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/0.1/Repository"/>
+        <rdfs:comment xml:lang="en">A Data Repository that is not a Dendro instance.</rdfs:comment>
+        <rdfs:label xml:lang="en">External Repository</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/HarvestedResource -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/0.1/HarvestedResource">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment xml:lang="en">A resource harvested from an external data repository.</rdfs:comment>
+        <rdfs:label xml:lang="en">Harvested Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/Project -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/0.1/Project">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment xml:lang="en">A Dendro Project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Project</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/Repository -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/0.1/Repository">
+        <rdfs:subClassOf rdf:resource="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Website"/>
+        <rdfs:comment xml:lang="en">A Data Repository (Website)</rdfs:comment>
+        <rdfs:label xml:lang="en">Repository</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/Researcher -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/0.1/Researcher">
+        <rdfs:subClassOf rdf:resource="http://dendro.fe.up.pt/ontology/0.1/User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dendro.fe.up.pt/ontology/0.1/User -->
+
+    <owl:Class rdf:about="http://dendro.fe.up.pt/ontology/0.1/User">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticdesktop.org/ontologies/2007/03/22/nco#Contact -->
+
+    <owl:Class rdf:about="http://www.semanticdesktop.org/ontologies/2007/03/22/nco#Contact"/>
+    
+
+
+    <!-- http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Folder -->
+
+    <owl:Class rdf:about="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Folder"/>
+    
+
+
+    <!-- http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Website -->
+
+    <owl:Class rdf:about="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Website"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/0.1/checksum">
+        <rdfs:comment xml:lang="en">The file checksum of a given resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">File Checksum</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/0.1/fileExtension">
+        <rdfs:label xml:lang="en">File Extension</rdfs:label>
+        <rdfs:comment xml:lang="en">The file extension of the file</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/0.1/handle">
+        <rdfs:label xml:lang="en">Project Handle</rdfs:label>
+        <rdfs:comment xml:lang="en">A unique handle for a Dendro Project.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/0.1/lastHarvested">
+        <rdfs:label xml:lang="en">Last Harvested</rdfs:label>
+        <rdfs:comment xml:lang="en">Time of last harvesting of an external resource</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/0.1/rootFolder">
+        <rdfs:comment xml:lang="en">The root folder of a Dendro Project</rdfs:comment>
+        <rdfs:label xml:lang="en">Root Folder</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/0.1/sourceRepository">
+        <rdfs:label xml:lang="en">Source Repository</rdfs:label>
+        <rdfs:comment xml:lang="en">The external repository from which the resource was harvested</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/0.1/text_content">
+        <rdfs:label xml:lang="en">Text Content</rdfs:label>
+        <rdfs:comment xml:lang="en">The textual content of a resource, extracted programmatically or not.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dendro.fe.up.pt/ontology/0.1/username">
+        <rdfs:label xml:lang="en">Username</rdfs:label>
+        <rdfs:comment xml:lang="en">The username (sequence of alphanumeric characters) of a Dendro-registered researcher</rdfs:comment>
+    </rdf:Description>
 </rdf:RDF>
 
-<!-- Created with Protege (with OWL Plugin 3.5, Build 663)  http://protege.stanford.edu -->
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
