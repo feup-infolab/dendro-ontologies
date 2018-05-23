@@ -15,7 +15,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl">
         <owl:imports rdf:resource="http://purl.oclc.org/NET/ssnx/ssn"/>
     </owl:Ontology>
     
@@ -32,9 +32,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#End_Time -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#End_Time -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#End_Time">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#End_Time">
         <rdfs:label rdf:datatype="&xsd;string">End Time</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
         <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#endTime"/>
@@ -42,9 +42,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Frequency -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Frequency -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Frequency">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Frequency">
         <rdfs:label rdf:datatype="&xsd;string">Frequency</rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">The smallest possible time between one observation and the next.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
@@ -53,9 +53,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Measurement_Range -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Measurement_Range -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Measurement_Range">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Measurement_Range">
         <rdfs:label rdf:datatype="&xsd;string">Measurement Range</rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">The set of values that the sensor can return as the result of an observation under the defined conditions with the defined measurement properties. (If no conditions are specified or the conditions do not specify a range for the observed qualities, the measurement range is to be taken as the condition for the observed qualities.)</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
@@ -64,9 +64,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Observation -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Observation -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Observation">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Observation">
         <rdfs:label rdf:datatype="&xsd;string">Observation</rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">An Observation is a Situation in which a Sensing method has been used to estimate or calculate a value of a Property of a FeatureOfInterest. Links to Sensing and Sensor describe what made the Observation and how; links to Property and Feature detail what was sensed; the result is the output of a Sensor; other metadata details times etc.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
@@ -75,9 +75,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Observation_Result -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Observation_Result -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Observation_Result">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Observation_Result">
         <rdfs:label rdf:datatype="&xsd;string">Observation Result</rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">Relation linking an Observation (i.e., a description of the context, the Situation, in which the observatioin was made) and a Result, which contains a value representing the value associated with the observed Property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
@@ -86,9 +86,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Observation_Sampling_Time -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Observation_Sampling_Time -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Observation_Sampling_Time">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Observation_Sampling_Time">
         <rdfs:label rdf:datatype="&xsd;string">Observation Sampling Time</rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">Rebadged as phenomenon time in [O&amp;M]. The phenomenon time shall describe the time that the result applies to the property of the feature-of-interest. This is often the time of interaction by a sampling procedure or observation procedure with a real-world feature.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
@@ -97,9 +97,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Platform -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Platform -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Platform">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Platform">
         <rdfs:label rdf:datatype="&xsd;string">Platform</rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">An Entity to which other Entities can be attached - particuarly Sensors and other Platforms. For example, a post might act as the Platform, a bouy might act as a Platform, or a fish might act as a Platform for an attached sensor.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
@@ -108,9 +108,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Region -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Region -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Region">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Region">
         <rdfs:label rdf:datatype="&xsd;string">Region</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
         <rdfs:isDefinedBy rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
@@ -118,9 +118,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Sensing_Method_Used -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Sensing_Method_Used -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Sensing_Method_Used">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Sensing_Method_Used">
         <rdfs:label rdf:datatype="&xsd;string">Sensing Method Used</rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">A (measurement) procedure is a detailed description of a measurement 
 according to one or more measurement principles and to a given 
@@ -132,9 +132,9 @@ calculation to obtain a measurement result [VIM 2.6]</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Sensor -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Sensor -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Sensor">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Sensor">
         <rdfs:label rdf:datatype="&xsd;string">Sensor </rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">A sensor can do (implements) sensing: that is, a sensor is any entity that can follow a sensing method and thus observe some Property of a FeatureOfInterest. Sensors may be physical devices, computational methods, a laboratory setup with a person following a method, or any other thing that can follow a Sensing Method to observe a Property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
@@ -143,9 +143,9 @@ calculation to obtain a measurement result [VIM 2.6]</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Sensor_Data_Sheet -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Sensor_Data_Sheet -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Sensor_Data_Sheet">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Sensor_Data_Sheet">
         <rdfs:label rdf:datatype="&xsd;string">Sensor Data Sheet</rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">A data sheet records properties of a sensor. A data sheet might describe for example the accuracy in various conditions, the power use, the types of connectors that the sensor has, etc. Generally a sensor&apos;s properties are recorded directly (with hasMeasurementCapability, for example), but the data sheet can be used for example to record the manufacturers specifications verses observed capabilites, or if more is known than the manufacturer specifies, etc. The data sheet is an information object about the sensor&apos;s properties, rather than a direct link to the actual properties themselves.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
@@ -154,9 +154,9 @@ calculation to obtain a measurement result [VIM 2.6]</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Start_Time -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Start_Time -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#Start_Time">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#Start_Time">
         <rdfs:label rdf:datatype="&xsd;string">Start Time</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
         <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#startTime"/>
@@ -164,9 +164,9 @@ calculation to obtain a measurement result [VIM 2.6]</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#System -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#System -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utilizador/ontologies/2018/4/untitled-ontology-22#System">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#System">
         <rdfs:label rdf:datatype="&xsd;string">System</rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">System is a unit of abstraction for pieces of infrastructure (and we largely care that they are) for sensing. A system has components, its subsystems, which are other systems.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
