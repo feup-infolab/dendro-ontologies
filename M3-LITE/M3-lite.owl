@@ -32,9 +32,9 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Calibration_measurement_type -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#calibrationMeasurementType -->
 
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Calibration_measurement_type">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#calibrationMeasurementType">
         <rdfs:label rdf:datatype="&xsd;string">Calibration measurement type</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.org/iot/vocab/m3-lite#</rdfs:isDefinedBy>
         <rdfs:comment>If the measurement was taken when the sensor was being calibrated</rdfs:comment>
@@ -43,9 +43,9 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Connected_Users -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#connectedUsers -->
 
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Connected_Users">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#connectedUsers">
         <rdfs:label rdf:datatype="&xsd;string">Connected Users</rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">Connected Users to a communication channel/platform.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.org/iot/vocab/m3-lite#</rdfs:isDefinedBy>
@@ -54,9 +54,9 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Coordinates -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#coordinates -->
 
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Coordinates">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#coordinates">
         <rdfs:label rdf:datatype="&xsd;string">Coordinates</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.org/iot/vocab/m3-lite#</rdfs:isDefinedBy>
         <rdfs:comment>Triples for location in the (Latitude, Longitude, Altitude) format.</rdfs:comment>
@@ -65,9 +65,9 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Count -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#count -->
 
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Count">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#count">
         <rdfs:label rdf:datatype="&xsd;string">Count</rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">Number of available particular things.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.org/iot/vocab/m3-lite#</rdfs:isDefinedBy>
@@ -76,9 +76,9 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Device -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#device -->
 
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Device">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#device">
         <rdfs:label rdf:datatype="&xsd;string">Device</rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">A device is a physical piece of technology - a system in a box. Devices may of course be built of smaller devices and software components (i.e. systems have components).</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.org/iot/vocab/m3-lite#</rdfs:isDefinedBy>
@@ -87,9 +87,9 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Distance -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#distance -->
 
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Distance">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#distance">
         <rdfs:label rdf:datatype="&xsd;string">Distance</rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">Measure of how far apart objects are.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.org/iot/vocab/m3-lite#</rdfs:isDefinedBy>
@@ -98,9 +98,9 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Measurement_Type -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#measurementType -->
 
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Measurement_Type">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#measurementType">
         <rdfs:label rdf:datatype="&xsd;string">Measurement Type</rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">Type of Measurement done using a device</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.org/iot/vocab/m3-lite#</rdfs:isDefinedBy>
@@ -109,9 +109,9 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Transportation_DOI -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#transportationDOI -->
 
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Transportation_DOI">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#transportationDOI">
         <rdfs:label rdf:datatype="&xsd;string">Transportation DOI</rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">Transportation, Smart Car/Vehicle, Intelligent Transport System (ITS) as an Internet of Things (IoT) applicative domain.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.org/iot/vocab/m3-lite#</rdfs:isDefinedBy>
@@ -120,9 +120,9 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Unit -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#unit -->
 
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Unit">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#unit">
         <rdfs:label rdf:datatype="&xsd;string">Unit</rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">A Unit is an abstract classifier that represents the concept of measurement unit that is defined as real scalar quantity, defined and adopted by convention, with which any other quantity of the same kind can be compared to express the ratio of the two quantities as a number.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.org/iot/vocab/m3-lite#</rdfs:isDefinedBy>
@@ -131,9 +131,9 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Working_State -->
+    <!-- https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#workingState -->
 
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#Working_State">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/M3-LITE/M3-lite.owl#workingState">
         <rdfs:label rdf:datatype="&xsd;string">Working State </rdfs:label>
         <rdfs:comment rdf:datatype="&xsd;string">Indicator of whether a person (or object) is working or not.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.org/iot/vocab/m3-lite#</rdfs:isDefinedBy>
