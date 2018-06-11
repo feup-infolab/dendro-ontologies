@@ -37,6 +37,7 @@
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#endTime">
         <rdfs:label rdf:datatype="&xsd;string">End Time</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:comment>The exact moment when something ends.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#endTime"/>
     </owl:DatatypeProperty>
     
@@ -113,6 +114,7 @@
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#region">
         <rdfs:label rdf:datatype="&xsd;string">Region</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:comment>The region where the object is located or connected.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
     </owl:DatatypeProperty>
     
@@ -159,6 +161,7 @@ calculation to obtain a measurement result [VIM 2.6]</rdfs:comment>
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/feup-infolab/dendro-ontologies/master/SSN/SSN.owl#startTime">
         <rdfs:label rdf:datatype="&xsd;string">Start Time</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:comment>The exact moment when something started.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#startTime"/>
     </owl:DatatypeProperty>
     
