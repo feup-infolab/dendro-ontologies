@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.dendro.fe.up.pt/ontology/chemistry#"
+     xml:base="http://www.dendro.fe.up.pt/ontology/chemistry"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:chm="http://www.dendro.fe.up.pt/ontology/chemistry#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry">
+        <rdfs:comment>Ontology developed after the collaboration with a researcher from the sustainable chemistry domain, in the context of a PhD thesis.</rdfs:comment>
+        <creator>João Aguiar Castro</creator>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#creator -->
+
+    <owl:AnnotationProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#creator"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#acidSolution -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#acidSolution">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acid Solution</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#adsorbentArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#adsorbentArea">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adsorbent Area</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#adsorbentAshTenor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#adsorbentAshTenor">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adsorbent Ash Tenor</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#adsorbentMolecularFormula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#adsorbentMolecularFormula">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adsorbent Molecular Formula</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#analysisMethod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#analysisMethod">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analysis Method</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#atmosphereConditions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#atmosphereConditions">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Conditions</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#catalystAnalysisInstrument -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#catalystAnalysisInstrument">
+        <rdfs:label xml:lang="en">Catalyst Analysis Instrument</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#catalystArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#catalystArea">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catalyst Area</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#chemicalElement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#chemicalElement">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical Element</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#cleaningSolution -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#cleaningSolution">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cleaning Solution</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#controlSolution -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#controlSolution">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Control Solution</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#degradedCompoundAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#degradedCompoundAmount">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Degraded Compund Amount</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#electromagneticRadiationMeasurementTechnique -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#electromagneticRadiationMeasurementTechnique">
+        <rdfs:label xml:lang="en">Electromagnetic Radiation Measurement Technique</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#gasPhaseFlow -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#gasPhaseFlow">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gas Phase Flow</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#interfacialDistance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#interfacialDistance">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interfacial Distance</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#lightIntensityMeasurementInstrument -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#lightIntensityMeasurementInstrument">
+        <rdfs:label xml:lang="en">Light Intensity Measurement Instrument</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#lightIntensityMeasurementTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#lightIntensityMeasurementTime">
+        <rdfs:label xml:lang="en">Light Intensity Measurement Time</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#oxidantAgent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#oxidantAgent">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxidant Agent</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#oxidationPotential -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#oxidationPotential">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxidation Potential</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#ozonisationReactorTechnique -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#ozonisationReactorTechnique">
+        <rdfs:label xml:lang="en">Ozonisation Reactor Technique</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#particleSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#particleSize">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Particle Size</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#phMeasurementInstrument -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#phMeasurementInstrument">
+        <rdfs:label xml:lang="en">Ph Measurement Instrument</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#photocatalyticActivity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#photocatalyticActivity">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photocatalytic Activity</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#photocatalyticReactionVessel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#photocatalyticReactionVessel">
+        <rdfs:label xml:lang="en">Photocatalytic Reaction Vessel</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#polyphenolFormula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#polyphenolFormula">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyphenol Formula</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#polyphenolMolecularMass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#polyphenolMolecularMass">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyphenol Molecular Mass</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#purityDegree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#purityDegree">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purity Degree</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#reagent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#reagent">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reagent</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#sampleCentrifugedAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#sampleCentrifugedAmount">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample Centrifuged Amount</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#sampleCrystalliteSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#sampleCrystalliteSize">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample Crystallite Size</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#samplePoreVolume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#samplePoreVolume">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample Pore Volume</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#sampleReference -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#sampleReference">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample Reference</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#solarLightIntensity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#solarLightIntensity">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solar Light Intensity</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#solutionPh -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#solutionPh">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solution Ph</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#studiedGas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#studiedGas">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studied Gas</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#surfaceAreaMeasurementInstrument -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#surfaceAreaMeasurementInstrument">
+        <rdfs:label xml:lang="en">Surface Area Measurement Instrument</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#surfaceAreaMeasurementTechnique -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#surfaceAreaMeasurementTechnique">
+        <rdfs:label xml:lang="en">Surface Area Measurement Technique</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#suspensionStirringTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#suspensionStirringTime">
+        <rdfs:label xml:lang="en">Suspension Stirring Time</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#totalCarbon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#totalCarbon">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total Carbon</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry#totalOrganicCarbon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry#totalOrganicCarbon">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total Organic Carbon</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry/absorbanceMeasurementInstrument -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry/absorbanceMeasurementInstrument">
+        <rdfs:label xml:lang="en">Absorbance Measurement Instrument</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry/absorbanceMeasurementTechnique -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry/absorbanceMeasurementTechnique">
+        <rdfs:label xml:lang="en">Absorbance Measurement Technique</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry/lightRadiationInstrument -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry/lightRadiationInstrument">
+        <rdfs:label xml:lang="en">Light Radiation Instrument</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry/ozonationTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry/ozonationTime">
+        <rdfs:label xml:lang="en">Ozonation Time</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/chemistry/particleRemovalTechnique -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/chemistry/particleRemovalTechnique">
+        <rdfs:label xml:lang="en">Particle Removal Technique</rdfs:label>
+    </owl:DatatypeProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
