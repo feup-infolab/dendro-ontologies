@@ -222,7 +222,7 @@
     <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Organism_Part">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Part</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The part of organism&apos;s anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells. E.g. tissue, organ, system, sperm, blood or body location (arm).</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The part of organism&apos;s anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells. E.g. tissue, organ, system, sperm, blood or body location (arm).</rdfs:comment>
     </owl:DatatypeProperty>
 
 
