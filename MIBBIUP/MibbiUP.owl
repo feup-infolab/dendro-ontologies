@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus-pc/ontologies/2019/1/untitled-ontology-80#"
+     xml:base="http://www.semanticweb.org/asus-pc/ontologies/2019/1/untitled-ontology-80"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:mibbiup="http://www.dendro.fe.up.pt/ontology/mibbiup">
+    <owl:Ontology rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical age of sampled organism(s).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Assay_Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Assay_Type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies. (e.g in live cell assay, cytometry assay, in vivo intervention, etc).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assay Type</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Cell_Line -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Cell_Line">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell Line</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Cell_Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Cell_Type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell type is a distinct morphological or functional form of cell. Examples are epithelial, glial etc.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell Type</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Collection_Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Collection_Date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date on which the sample was collected.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collection Date</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Development_Stage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Development_Stage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developmental stage of the organism.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developmental Stage</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Disease -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Disease">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease is a disposition that describes states of disease associated with a particular sample and/or organism.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Drug_Usage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Drug_Usage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any drug used by subject and the frequency of usage; can include multiple drugs used.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drug Usage</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Environmental_Factor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Environmental_Factor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The external elements and conditions which surround, influence, and affect the life and development of an organism or population (e.g atmospheric, hydrostatic pressure, light, etc).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental Factor</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Ethnicity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Ethnicity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ethnicity of the subject.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ethnicity</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Experimental_Factor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Experimental_Factor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The name of  factor used in the experiment. A factor corresponds to an independent variable manipulated by the experimentalist with the intention to affect biological systems in a way that can be measured by an assay. (e.g chemical substance, temperature, biological replicate, etc).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental Factor</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Instrument_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Instrument_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instrument is a device which provides a mechanical or electronic function.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instrument Name</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Instrument_Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Instrument_Type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of the instrument used (e.g liquid handling robot, centrifuge, FACS, Plate Reader, etc).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instrument Type</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Material -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Material">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the materials that are used in the experiment.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Material</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Measurement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Measurement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A measurement is an information entity that is a recording of the output of a measurement such as produced by an instrument.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Method -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Method">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A description of the methods followed during the experiment.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Molecule -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Molecule">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any polyatomic entity that is an electrically neutral entity consisting of more than one atom.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molecule</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Organism -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Organism">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifier or name of the individual organism from which the biomaterial was derived.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Organism_Part -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Organism_Part">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Part</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The part of organism&apos;s anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells. E.g. tissue, organ, system, sperm, blood or body location (arm).</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Reagent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Reagent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of reagents (media, suplements, transfection reagents) used during the Experiment.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reagent</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Sample_Collection_Protocol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Sample_Collection_Protocol">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes the procedure whereby biological samples for an experiment are sourced.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample Collection Protocol</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Sample_Size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Sample_Size">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amount or size of sample (volume, mass or area) that was collected.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample Size</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Sample_Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Sample_Type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description and characteristics of  the samples gathered or used in the experiment.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample Type</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Sex -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Sex">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical sex of sampled organism(s).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sex</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Software -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Software">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The software applications used in the gathering or processing procedures carried out in Experiment.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Study_Design -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Study_Design">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution. (e.g in vitro design, clinical study design, cellular process design, etc).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study Design</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Study_Domain -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Study_Domain">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A domain of an experiment is a field of study in which an experiment is designed to discover new knowledge.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study Domain</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Temperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temperature registered during some Experiment/Assay.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temperature</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Tissue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Tissue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of tissue the sample was taken from.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tissue</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#Treatment_Protocol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#Treatment_Protocol">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protocol in which the aim is to treat a sample, collection of samples, organism or group of organisms for some experimental analysis of outcome.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Treatment Protocol</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI -->
+
+    <owl:Class rdf:about="http://www.dendro.fe.up.pt/ontology/mibbiup#MIBBI"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
