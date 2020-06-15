@@ -6,10 +6,11 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:imgdata="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#"
      xmlns:dadosimagéticos="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos">
-        <dadosimagéticos:Autor xml:lang="pt">Miguel Fernandes</dadosimagéticos:Autor>
-        <dadosimagéticos:Descrição xml:lang="pt">Uma lista de conceitos para descrever conjuntos de dados de investigação em formato de imagem.</dadosimagéticos:Descrição>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata">
+        <imgdata:Autor xml:lang="pt">Miguel Fernandes</imgdata:Autor>
+        <imgdata:Descrição xml:lang="pt">Uma lista de conceitos para descrever conjuntos de dados de investigação em formato de imagem.</imgdata:Descrição>
     </owl:Ontology>
     
 
@@ -25,25 +26,25 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#Autor -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Autor -->
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#Autor">
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Autor">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:AnnotationProperty>
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#Descrição -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Descrição -->
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#Descrição">
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Descrição">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:AnnotationProperty>
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#hasAlternative -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative -->
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#hasAlternative"/>
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative"/>
     
 
 
@@ -82,9 +83,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#amostra -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#amostra -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#amostra">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#amostra">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="pt">Optativo</rdfs:comment>
         <rdfs:comment xml:lang="en">Optional</rdfs:comment>
@@ -97,9 +98,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#autor -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#autor -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#autor">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#autor">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="pt">entidade responsável pela autoria do recurso.</rdfs:comment>
@@ -111,9 +112,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#cobertura_espacial -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#cobertura_espacial -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#cobertura_espacial">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#cobertura_espacial">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="pt">Optativo</rdfs:comment>
         <rdfs:comment xml:lang="en">Optional</rdfs:comment>
@@ -126,9 +127,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#data -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#data -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#data">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#data">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">a point or time period associated with an event in the lifecycle of the image set</rdfs:comment>
         <rdfs:comment xml:lang="pt">um ponto ou período de tempo associado a um evento no ciclo de vida do conjunto de imagens</rdfs:comment>
@@ -139,9 +140,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#descrição -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#descrição -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#descrição">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#descrição">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">a description about the image.</rdfs:comment>
         <rdfs:comment xml:lang="pt">uma descrição sobre a imagem.</rdfs:comment>
@@ -152,9 +153,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#direitos_utilização -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#direitos_utilização -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#direitos_utilização">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#direitos_utilização">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">a statement of ownership rights associated with the image set.</rdfs:comment>
         <rdfs:comment xml:lang="pt">uma declaração sobre os direitos de propriedade associados ao conjunto de imagens.</rdfs:comment>
@@ -165,9 +166,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#edicao -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#edicao -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#edicao">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#edicao">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">a statement about the edits/manipulations made to the image.</rdfs:comment>
         <rdfs:comment xml:lang="pt">uma declaração sobre as edições/manipulações realizadas na imagem.</rdfs:comment>
@@ -177,9 +178,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#escala -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#escala -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#escala">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#escala">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="pt">Optativo</rdfs:comment>
         <rdfs:comment xml:lang="en">Optional</rdfs:comment>
@@ -192,9 +193,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#fonte -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#fonte -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#fonte">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#fonte">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">resource from which the image derives.</rdfs:comment>
         <rdfs:comment xml:lang="pt">um recurso de onde a imagem deriva.</rdfs:comment>
@@ -205,36 +206,36 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#formato -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#formato">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <dadosimagéticos:hasAlternative xml:lang="en">animation</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="pt">animação</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="en">blueprint</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="pt">desenho</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="en">drawing</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="en">engraving</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="pt">fotografia</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="en">graphic</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="pt">gravura</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="pt">gráfico</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="en">illustration</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="pt">ilustração</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="pt">imagens microscópicas</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="pt">imagens médicas</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="en">map</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="pt">mapa</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="en">medical images</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="en">microscopic images</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="en">painting</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="en">photography</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="pt">pintura</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="pt">planta</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="en">portrait</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="pt">retrato</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="en">video</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative xml:lang="pt">video</dadosimagéticos:hasAlternative>
+        <imgdata:hasAlternative xml:lang="en">animation</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="pt">animação</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="en">blueprint</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="pt">desenho</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="en">drawing</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="en">engraving</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="pt">fotografia</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="en">graphic</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="pt">gravura</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="pt">gráfico</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="en">illustration</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="pt">ilustração</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="pt">imagens microscópicas</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="pt">imagens médicas</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="en">map</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="pt">mapa</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="en">medical images</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="en">microscopic images</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="en">painting</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="en">photography</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="pt">pintura</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="pt">planta</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="en">portrait</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="pt">retrato</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="en">video</imgdata:hasAlternative>
+        <imgdata:hasAlternative xml:lang="pt">video</imgdata:hasAlternative>
         <rdfs:comment xml:lang="en">nature or genre of the image</rdfs:comment>
         <rdfs:comment xml:lang="pt">natureza ou género da imagem.</rdfs:comment>
         <rdfs:isDefinedBy>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</rdfs:isDefinedBy>
@@ -244,9 +245,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#instrumento -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#instrumento -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#instrumento">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#instrumento">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="pt">Optativo</rdfs:comment>
         <rdfs:comment xml:lang="en">Optional</rdfs:comment>
@@ -259,9 +260,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#metodologia -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#metodologia -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#metodologia">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#metodologia">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">image production methodology</rdfs:comment>
         <rdfs:comment xml:lang="pt">metodologia de produção da imagem</rdfs:comment>
@@ -272,9 +273,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#período_temporal -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#período_temporal -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#período_temporal">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#período_temporal">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">a relevant time period for the set of images. It can be a date or time period.</rdfs:comment>
         <rdfs:comment xml:lang="pt">um período temporal relevante para o conjunto de imagens. Pode ser uma data ou período de tempo.</rdfs:comment>
@@ -285,9 +286,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#qualidade -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#qualidade -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#qualidade">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#qualidade">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">information on the quality of the data or any quality assurance procedures followed in the image production.</rdfs:comment>
         <rdfs:comment xml:lang="pt">informação sobre a qualidade dos dados ou quaisquer procedimentos de garantia de qualidade seguidos na produção da imagem.</rdfs:comment>
@@ -298,9 +299,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#recursos_relacionados -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#recursos_relacionados -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#recursos_relacionados">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#recursos_relacionados">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">link or pointing to an image-related resource.</rdfs:comment>
         <rdfs:comment xml:lang="pt">link ou apontamento para um recurso relacionado com imagem.</rdfs:comment>
@@ -311,18 +312,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#tipo -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#tipo">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <dadosimagéticos:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.bmp</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.dicom</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.jpeg</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.pdf</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.png</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.raw</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.svg</dadosimagéticos:hasAlternative>
-        <dadosimagéticos:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.tiff</dadosimagéticos:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.bmp</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.dicom</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.jpeg</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.pdf</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.png</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.raw</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.svg</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.tiff</imgdata:hasAlternative>
         <rdfs:comment xml:lang="en">file format or physical medium in which the image is located.</rdfs:comment>
         <rdfs:comment xml:lang="pt">formato do ficheiro ou meio físico em que se encontra a imagem.</rdfs:comment>
         <rdfs:isDefinedBy>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</rdfs:isDefinedBy>
@@ -332,9 +333,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#título -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#título -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#título">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#título">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">name given to the set of images.</rdfs:comment>
         <rdfs:comment xml:lang="pt">nome dado ao conjunto de imagens.</rdfs:comment>
@@ -356,18 +357,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#AtivoInvestigação -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#AtivoInvestigação -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#AtivoInvestigação">
+    <owl:Class rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#AtivoInvestigação">
         <rdfs:label>AtivoInvestigacao</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#Imagens -->
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Imagens -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#Imagens">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/migue/ontologies/2020/4/dadosimagéticos#AtivoInvestigação"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Imagens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#AtivoInvestigação"/>
     </owl:Class>
 </rdf:RDF>
 
