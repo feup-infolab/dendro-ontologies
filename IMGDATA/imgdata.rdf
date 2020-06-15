@@ -1,0 +1,324 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/migue/ontologies/2020/4/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/migue/ontologies/2020/4/untitled-ontology-12"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:imgdata="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata">
+        <imgdata:Autor xml:lang="pt">Miguel Fernandes</imgdata:Autor>
+        <imgdata:Descrição xml:lang="pt">Uma lista de conceitos para descrever conjuntos de dados de investigação em formato de imagem.</imgdata:Descrição>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Autor -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Autor">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Descrição -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Descrição">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#amostra -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#amostra">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">Optativo</rdfs:comment>
+        <rdfs:comment xml:lang="pt">descreve a amostra utilizada na experiência.</rdfs:comment>
+        <rdfs:isDefinedBy>https://ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/field_level_documentation.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt">amostra</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#autor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#autor">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">entidade responsável pela autoria do recurso.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt">autor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#cobertura_espacial -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#cobertura_espacial">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">Optativo</rdfs:comment>
+        <rdfs:comment xml:lang="pt">caraterísticas espaciais relevantes para o conjunto de imagens. Pode ser um local ou as coordenadas geográficas.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt">coberturaEspacial</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#data -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#data">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">um ponto ou período de tempo associado a um evento no ciclo de vida do conjunto de imagens</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt">data</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#descrição -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#descrição">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">uma descrição sobre a imagem.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt">descricao</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#direitos_utilização -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#direitos_utilização">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">uma declaração sobre os direitos de propriedade associados ao conjunto de imagens.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt">direitosUtilizacao</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#edicao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#edicao">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>uma declaração sobre as edições/manipulações realizadas na imagem.</rdfs:comment>
+        <rdfs:label xml:lang="pt">edicao</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#escala -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#escala">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">Optativo</rdfs:comment>
+        <rdfs:comment xml:lang="pt">especifica os valores numéricos ou textuais definidos na escala de medida.</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.omgwiki.org/OMGSysML/doku.php?id=sysml-qudv:quantities_units_dimensions_values_qudv</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt">escala</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#fonte -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#fonte">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">um recurso de onde a imagem deriva.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt">fonte</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animação</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">desenho</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fotografia</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gravura</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ilustração</imgdata:hasAlternative>
+        <imgdata:hasAlternative>imagens microscópicas</imgdata:hasAlternative>
+        <imgdata:hasAlternative>imagens médicas</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapa</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pintura</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planta</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retrato</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">video</imgdata:hasAlternative>
+        <rdfs:comment xml:lang="pt">natureza ou género da imagem.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt">tipo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#instrumento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#instrumento">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">Optativo</rdfs:comment>
+        <rdfs:comment xml:lang="pt">nome do instrumento usado para produzir a imagem.</rdfs:comment>
+        <rdfs:isDefinedBy>https://gcmd.nasa.gov/DocumentBuilder/defaultDif10/guide/index.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt">instrumento</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#metodologia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#metodologia">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">metodologia de produção da imagem</rdfs:comment>
+        <rdfs:isDefinedBy>https://ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/field_level_documentation.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt">metodologia</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#período_temporal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#período_temporal">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">um período temporal relevante para o conjunto de imagens. Pode ser uma data ou período de tempo.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt">periodoTemporal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#qualidade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#qualidade">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">informação sobre a qualidade dos dados ou quaisquer procedimentos de garantia de qualidade seguidos na produção da imagem.</rdfs:comment>
+        <rdfs:isDefinedBy>https://gcmd.nasa.gov/DocumentBuilder/defaultDif10/guide/index.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt">qualidade</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#recursos_relacionados -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#recursos_relacionados">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">link ou apontamento para um recurso relacionado com imagem.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt">recursosRelacionados</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.bmp</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.dicom</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.jpeg</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.pdf</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.png</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.raw</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.svg</imgdata:hasAlternative>
+        <imgdata:hasAlternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.tiff</imgdata:hasAlternative>
+        <rdfs:comment xml:lang="pt">formato do ficheiro ou meio físico em que se encontra a imagem.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt">formato</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#título -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#título">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">nome dado ao conjunto de imagens.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt">titulo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#AtivoInvestigação -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#AtivoInvestigação">
+        <rdfs:label>AtivoInvestigacao</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Imagens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Imagens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#AtivoInvestigação"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
