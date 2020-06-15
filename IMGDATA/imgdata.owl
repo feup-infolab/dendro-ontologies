@@ -1,0 +1,221 @@
+Prefix(:=<http://www.semanticweb.org/migue/ontologies/2020/4/untitled-ontology-12#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata>
+Annotation(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Autor> "Miguel Fernandes"@pt)
+Annotation(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Descrição> "Uma lista de conceitos para descrever conjuntos de dados de investigação em formato de imagem."@pt)
+
+Declaration(Class(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#AtivoInvestigação>))
+Declaration(Class(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Imagens>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#amostra>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#autor>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#cobertura_espacial>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#data>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#descrição>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#direitos_utilização>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#edicao>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#escala>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#fonte>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#instrumento>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#metodologia>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#período_temporal>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#qualidade>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#recursos_relacionados>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo>))
+Declaration(DataProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#título>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Autor>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Descrição>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Autor> (<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Autor>)
+
+AnnotationPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Autor> xsd:string)
+
+# Annotation Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Descrição> (<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Descrição>)
+
+AnnotationPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Descrição> xsd:string)
+
+# Annotation Property: rdfs:comment (rdfs:comment)
+
+AnnotationPropertyRange(rdfs:comment xsd:string)
+
+# Annotation Property: rdfs:isDefinedBy (rdfs:isDefinedBy)
+
+AnnotationPropertyRange(rdfs:isDefinedBy xsd:string)
+
+# Annotation Property: rdfs:label (rdfs:label)
+
+AnnotationPropertyRange(rdfs:label xsd:string)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#amostra> (amostra)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#amostra> "Optativo"@pt)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#amostra> "descreve a amostra utilizada na experiência."@pt)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#amostra> "https://ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/field_level_documentation.html")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#amostra> "amostra"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#amostra> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#autor> (autor)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#autor> "entidade responsável pela autoria do recurso."@pt)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#autor> "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#autor> "autor"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#autor> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#cobertura_espacial> (coberturaEspacial)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#cobertura_espacial> "Optativo"@pt)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#cobertura_espacial> "caraterísticas espaciais relevantes para o conjunto de imagens. Pode ser um local ou as coordenadas geográficas."@pt)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#cobertura_espacial> "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#cobertura_espacial> "coberturaEspacial"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#cobertura_espacial> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#data> (data)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#data> "um ponto ou período de tempo associado a um evento no ciclo de vida do conjunto de imagens"@pt)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#data> "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#data> "data"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#data> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#descrição> (descricao)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#descrição> "uma descrição sobre a imagem."@pt)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#descrição> "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#descrição> "descricao"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#descrição> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#direitos_utilização> (direitosUtilizacao)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#direitos_utilização> "uma declaração sobre os direitos de propriedade associados ao conjunto de imagens."@pt)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#direitos_utilização> "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#direitos_utilização> "direitosUtilizacao"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#direitos_utilização> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#edicao> (edicao)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#edicao> "uma declaração sobre as edições/manipulações realizadas na imagem.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#edicao> "edicao"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#edicao> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#escala> (escala)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#escala> "Optativo"@pt)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#escala> "especifica os valores numéricos ou textuais definidos na escala de medida."@pt)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#escala> "http://www.omgwiki.org/OMGSysML/doku.php?id=sysml-qudv:quantities_units_dimensions_values_qudv")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#escala> "escala"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#escala> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#fonte> (fonte)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#fonte> "um recurso de onde a imagem deriva."@pt)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#fonte> "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#fonte> "fonte"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#fonte> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> (tipo)
+
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> "animação"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> "desenho"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> "fotografia"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> "gravura"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> "ilustração"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> "imagens microscópicas")
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> "imagens médicas")
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> "mapa"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> "pintura"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> "planta"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> "retrato"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> "video"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> "natureza ou género da imagem."@pt)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> "tipo"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#formato> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#instrumento> (instrumento)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#instrumento> "Optativo"@pt)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#instrumento> "nome do instrumento usado para produzir a imagem."@pt)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#instrumento> "https://gcmd.nasa.gov/DocumentBuilder/defaultDif10/guide/index.html")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#instrumento> "instrumento"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#instrumento> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#metodologia> (metodologia)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#metodologia> "metodologia de produção da imagem"@pt)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#metodologia> "https://ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/field_level_documentation.html")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#metodologia> "metodologia"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#metodologia> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#período_temporal> (periodoTemporal)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#período_temporal> "um período temporal relevante para o conjunto de imagens. Pode ser uma data ou período de tempo."@pt)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#período_temporal> "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#período_temporal> "periodoTemporal"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#período_temporal> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#qualidade> (qualidade)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#qualidade> "informação sobre a qualidade dos dados ou quaisquer procedimentos de garantia de qualidade seguidos na produção da imagem."@pt)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#qualidade> "https://gcmd.nasa.gov/DocumentBuilder/defaultDif10/guide/index.html")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#qualidade> "qualidade"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#qualidade> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#recursos_relacionados> (recursosRelacionados)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#recursos_relacionados> "link ou apontamento para um recurso relacionado com imagem."@pt)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#recursos_relacionados> "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#recursos_relacionados> "recursosRelacionados"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#recursos_relacionados> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo> (formato)
+
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo> ".bmp"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo> ".dicom"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo> ".jpeg"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo> ".pdf"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo> ".png"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo> ".raw"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo> ".svg"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#hasAlternative> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo> ".tiff"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo> "formato do ficheiro ou meio físico em que se encontra a imagem."@pt)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo> "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo> "formato"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#tipo> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#título> (titulo)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#título> "nome dado ao conjunto de imagens."@pt)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#título> "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#título> "titulo"@pt)
+DataPropertyRange(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#título> xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#AtivoInvestigação> (AtivoInvestigacao)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#AtivoInvestigação> "AtivoInvestigacao")
+
+# Class: <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Imagens> (<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Imagens>)
+
+SubClassOf(<http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#Imagens> <http://www.semanticweb.org/migue/ontologies/2020/4/imgdata#AtivoInvestigação>)
+
+
+)
